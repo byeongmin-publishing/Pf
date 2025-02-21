@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* 2024.07 한신정보기술 안병민 */
+
+/* SUITE */
+@font-face{
+    font-family:'ST';
+    font-weight:800;
+    src:url("../font/SUITE-ExtraBold.woff2") format('woff2'),
+    url("../font/SUITE-ExtraBold.woff") format('woff');
+}
+@font-face{
+    font-family:'ST';
+    font-weight:700;
+    src:url("../font/SUITE-SemiBold.woff2") format('woff2'),
+    url("../font/SUITE-SemiBold.woff") format('woff');
+}
+@font-face{
+    font-family:'ST';
+    font-weight:600;
+    src:url("../font/SUITE-Bold.woff2") format('woff2'),
+    url("../font/SUITE-Bold.woff") format('woff');
+}
+@font-face{
+    font-family:'ST';
+    font-weight:400;
+    src:url("../font/SUITE-Regular.woff2") format('woff2'),
+    url("../font/SUITE-Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'ST';
+    font-weight:300;
+    src:url("../font/SUITE-Light.woff2") format('woff2'),
+    url("../font/SUITE-Light.woff") format('woff');
+}
+@font-face{
+    font-family:'gab';
+    font-weight:400;
+    src:url("../font/gabriola.woff2") format('woff2'),
+    url("../font/gabriola.woff") format('woff');
+}
+@font-face{
+    font-family:'HK';
+    font-weight:400;
+    src:url("../font/HakgyoansimTtwimteulR.woff2") format('woff2'),
+    url("../font/HakgyoansimTtwimteulR.woff") format('woff');
+}
+
+
+.header_box .wrap .logo{top:17px;}
+.header_box .wrap .logo a:hover{text-decoration:none;}
+.header_box .wrap .logo a .logo_image{width:150px;height:79px;}
+#lnb .nav .depth1{padding-right:143px;}
+#lnb .nav .depth1 .depth1_list{width:auto;}
+#lnb .nav .depth1 .depth1_list .depth1_item{width:auto;}
+#lnb .nav .depth1 .depth1_list .depth1_item .depth1_text{width:auto;padding:45px 76px 39px;font-size:22px;color:#000;letter-spacing:0;line-height:26px;font-family:'ST', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;}
+#lnb .nav .depth1 .add_box .btn.sitemap{width:38px;height:26px;}
+#lnb .nav .depth1 .add_box .btn.sitemap:hover{background-position:0 top;}
+
+
+@media screen and (min-width:1001px){
+    .gnb_list .gnb_item:hover:before{animation:gnb_icon 0.45s cubic-bezier(0, 0, 0.18, 0.99) infinite alternate;}
+    @keyframes gnb_icon{100%{transform:translateY(-5px);}}
+    #lnb .nav .depth1 .add_box .btn.sitemap:hover{animation:sitemap 3s linear infinite;}
+    @keyframes sitemap{100%{background-position:-29px top;}}
+}
+
+
+@media screen and (max-width:1400px){
+    .header_box .wrap .logo a .logo_image{width:130px;height:68px;}
+}
+
+
+@media screen and (max-width:1000px){
+    .header_box .wrap .logo a .logo_image{width:110px;height:58px;}
+    .header_box .menuopenbox{top:33px;}
+    .header_box .menuopenbox .lnb_open:hover{background-position:0 0;}
+
+    #lnb{visibility:hidden;}
+    .menu_open #lnb{visibility:visible;}
+    #lnb .lnb_topbox{padding-top:1px;padding-bottom:12px;padding-left:10px;background-color:#043189;}
+    #lnb .lnb_topbox .www_box,
+    #lnb .lnb_topbox .lnb_gnb{display:none;}
+    #lnb .menuclosebox{top:43px;right:15px;visibility:hidden;}
+    .menu_open #lnb .menuclosebox{visibility:visible;}
+    #lnb .menuclosebox .lnb_close{width:20px;height:20px;background:url(../images/common/close_btn.png)center center / cover no-repeat;}
+
+    #lnb .mobile_gnb{font-size:0;line-height:0;}
+    #lnb .mobile_gnb .gnb_list{}
+    #lnb .mobile_gnb .gnb_list .gnb_item{display:inline-block;position:relative;margin-top:10px;margin-right:10px;vertical-align:top;}
+    #lnb .mobile_gnb .gnb_list .gnb_item:before{display:block;position:absolute;width:30px;height:30px;background-image:url(../images/common/mobile_gnb_icon.png);background-size:cover;background-repeat:no-repeat;}
+    #lnb .mobile_gnb .gnb_list .gnb_item:nth-child(1):before{top:-5px;left:13px;background-position:calc(-30px * 0) 0;}
+    #lnb .mobile_gnb .gnb_list .gnb_item:nth-child(2):before{top:-7px;left:19px;background-position:calc(-30px * 1) 0;}
+    #lnb .mobile_gnb .gnb_list .gnb_item:nth-child(3):before{top:-3px;left:12px;background-position:calc(-30px * 2) 0;}
+    #lnb .mobile_gnb .gnb_list .gnb_item .item_area{padding:0 20px 0 45px;background-color:rgba(255,255,255,0.12);box-shadow:5px 9px 15px 0px rgba(0,02,35,0.03);box-sizing:border-box;border:1px solid rgba(255,255,255,0.15);border-radius:50px;}
+    #lnb .mobile_gnb .gnb_list .gnb_item .item_area span{font-size:14px;color:#fff;letter-spacing:-0.03em;line-height:30px;font-family:'ST', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;}
+}
+
+
+@media screen and (max-width:640px){
+    #header{padding-top:9px;padding-bottom:7px;}
+    .header_box .menuopenbox{top:27px;}
+}
+
+
+.footer_box{background-color:#152546;border:none;}
+.footer_box .footer_nav ul li:before{background-color:rgba(255,255,255,0.2);}
+.footer_box .footer_nav ul li a{color:#6277a2;}
+.footer_box .footer_nav ul li:first-child a{color:#87a1c8;}
+.footer_box .footer_content address .address,
+.footer_box .footer_content address .telbox span,
+.footer_box .footer_content .copyright{color:#6277a2;}

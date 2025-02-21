@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+article,aside,audio,blockquote,body,dd,details,div,dl,dt,embed,fieldset,figcaption,figure,footer,h1,h2,h3,h4,h5,h6,header,html,iframe,legend,li,main,menu,nav,ol,p,section,textarea,ul,a,em,span{box-sizing:content-box;}
+
+body{position:relative;color:#4c4c4c;font-size:16px;font-family:'NotoKr','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;line-height:24px;}
+
+.ir{overflow:hidden; font-size:0 !important;color:transparent !important;line-height:0; white-space:nowrap; text-indent:100%;}
+
+a:link{color:#4c4c4c;text-decoration:none;}
+a:visited{color:#4c4c4c;text-decoration:none;}
+a:hover{color:#4c4c4c;font-weight:600;text-decoration:none;}
+a:active{color:#4c4c4c;text-decoration:underline;}
+a span{cursor:pointer;}
+button{cursor:pointer; font-family:'NotoKr','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
+input{font-family:'NotoKr','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
+input[type="submit"]{cursor:pointer;}
+
+.loginTop{overflow: hidden;position:relative;background:#006fec;background:linear-gradient(to right, #006fec 0%,#03a09a 100%);}
+.loginTop:before{display:block;position:absolute;top:0;left:0;width:100%;height:400px;background:url(/common/images/login/login_top_bg.png) no-repeat 50% top;}
+.loginTop .inner_wrap{position:relative;z-index:1;width:100%;max-width:1050px;height:305px;margin:0 auto;padding:95px 0 0;color:#fff;text-align:center;}
+.loginTop h1{position:relative;width:175px;margin:0 auto 28px;padding:15px 0 0 190px;font-size:38px;line-height:40px;}
+.loginTop h1 span{display:block;position:absolute;top:0;left:0;width:169px;height:69px;background:url(/common/images/login/logo.png) no-repeat;color:transparent;font-size:1px;}
+.loginTop p{font-size:18px;line-height:20px;}
+footer{margin:40px 0 0;padding:35px 0 65px;background-color:#f6f7fb;text-align:center;}
+address{display:block;margin:0 0 8px;color:#222;}
+.contact{margin:0;color:#222;font-size:0;}
+.contact span{display:inline-block;margin:0 10px;font-size:16px;}
+.contact em{display:inline-block;margin:0 0 0 10px;}
+.copyright{margin:12px 0 0;color:#848484;}
+.indent10 {margin-left:10px;}
+
+
+
+
+/* 통합 로그인 */
+.membership{position:relative;width:calc(100% - 20px);max-width:1180px;margin:-84px auto 40px;padding:10px;}
+.membership:before{display:block;position:absolute;top:0;left:0;right:0;bottom:0;border:10px solid #fff;}
+.membership .inner_wrap{position:relative;z-index:1;width:calc(100% - 1px);border:1px solid #1e377a;}
+.content_wrap{margin:0 60px;}
+.tab-link{width:100%;font-size:0;overflow:hidden;}
+.tab-link span,.tab-link a{display:inline-block;position:relative;width:33.333333%;height:74px;margin:0;padding:0;background-color:#1e377a;color:#fff;font-size:20px;line-height:74px;text-align:center;vertical-align:top;}
+.tab-link a:before{display:block;position:absolute;top:0;left:0;width:1px;height:100%;background-color:rgba(255,255,255,.1);}
+.tab-link .active{z-index:1;background-color:#fff;color:#1e377a;font-size:22px;font-weight:600;}
+.tab-link .active:after{display:block;position:absolute;top:0;right:-21px;width:21px;height:100%;background:url(/common/images/login/pattern2.png) no-repeat left top;}
+.login-box{position:relative;padding:60px 0;font-size:0;}
+.login-box:before{display:block;position:absolute;top:60px;left:0;right:0;bottom:60px;width:1px;margin:0 auto;background-color:#adb1c0;}
+.login-box > div{display:inline-block;width:calc(50% - 140px);padding:0 70px;font-size:16px;vertical-align:top;}
+.membership h2{color:#000;font-size:22px;line-height:24px;}
+.membership h3{color:#000;font-size:20px;line-height:22px;}
+.title-point{display:inline-block;position:relative;}
+.title-point:before{display:block;position:absolute;left:-3px;right:-3px;bottom:-5px;height:17px;border-radius:8px;}
+.title-point.blue:before{background-color:#d9efff;}
+.title-point.red:before{background-color:#ffe1e1;}
+.title-point i{position:relative;z-index:1;}
+.login-box h2,.socialLogin h3{text-align:center;}
+.socialLogin h2{margin:60px 0 0;text-align:center;}
+.membership [type="checkbox"]{display:inline-block;width:15px;height:15px;margin:0 8px 0 0;border:1px solid #b3b1b4;border-radius:0;vertical-align:middle;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.btn-bg,.btn-line{display:inline-block;position:relative;margin:0;padding:17px 40px;box-sizing:content-box;border:1px solid transparent;font-size:16px;line-height:18px;vertical-align:top;}
+.btn-bg,a.btn-bg{background-color:#2b4380;border-color:#2b4380;color:#fff;}
+.btn-line{background-color:#fff;border-color:#2b4380;color:#2b4380;}
+.membership .text{display:block;margin:23px 0 0;color:#464646;text-align:center;}
+.membership .text strong{color:#1856b5;font-weight:400;}
+.form-wrap{position:relative;margin:25px 0 0;padding:0 120px 0 0;}
+.single-row{width:410px;margin:0 auto;text-align:left;}
+.form-wrap.button-align-bottom{padding:0;}
+.single-row .form_list{margin:20px 0 40px;}
+.form_list li{position:relative;margin:0 0 10px;font-size:0;}
+.form_list li:last-child{margin:0;}
+.form_list label,.form_list input{display:inline-block;font-size:16px;vertical-align:top;}
+.form_list label{width:70px;height:44px;line-height:44px;}
+.form_list input{width:calc(100% - 72px); padding-left:10px; height:44px;background:#fff;border:1px solid #b3b1b4;line-height:44px;}
+.pw_modify label{width:130px;}
+.pw_modify input{width:calc(100% - 132px);}
+.form-wrap .login-button[type="submit"]{display:block;position:absolute;top:0;right:0;bottom:0;width:110px;height:100%;background-color:#2b4380;color:#fff;line-height:100%;}
+.member-service{margin:20px 0 0 30px; font-size:0;text-align:center;}
+.member-service a{display:inline-block;position:relative;padding:0 30px;font-size:16px;vertical-align:top;}
+.member-service a:before{display:block;position:absolute;top:0;left:0;bottom:0;width:1px;height:14px;margin:auto 0;background-color:#d0d0d0;}
+.member-service a:first-child:before{display:none;}
+.member-service a:first-child{padding-left:0;}
+.member-service a:last-child{padding-right:0;}
+.social{margin:45px 0 0;}
+.social ul{margin:25px 0 0;}
+.social li{display:block;width:100%;margin:10px 0 0;background-color:#f8da33;}
+.social li:first-child{margin:0;background-color:#129b3c;}
+.social a{display:block;position:relative;height:50px;padding:0 50px 0 90px;color:#333126;line-height:50px;}
+.social li:first-child a{color:#fff;}
+.social a:before,.social a:after{display:block;position:absolute;top:0;bottom:0;margin:auto 0;}
+.social a:before{left:0;width:60px;height:50px;background:url(/common/images/login/certification_icon.png) no-repeat -63px 0;}
+.social li:first-child a:before{background-position:0 0;}
+.social a:after{right:20px;width:8px;height:14px;background:url(/common/images/login/bullet1.png) no-repeat left bottom;}
+.social li:first-child a:after{background-position:0 0;}
+.certifi-link{width:calc(100% + 50px); margin:40px 0 40px -50px;font-size:0;}
+.certifi-link li{display:inline-block;position:relative;width:calc(50% - 50px);margin:0 0 0 50px;font-size:16px;text-align:center;vertical-align:top;}
+.certifi-link li:before{display:block;width:88px;height:85px;margin:0 auto 30px;background:url(/common/images/login/certification_icon.png) no-repeat -275px 0;}
+.certifi-link li:first-child:before{background-position:-166px 0;}
+.certifi-link a{display:block;width:100%;height:50px;background-color:#2b4380;color:#fff;line-height:48px;}
+.certifi-link.default{position:relative;width:100%;margin:50px 0;}
+.certifi-link.default:before{display:block;position:absolute;top:15px;left:0;right:0;bottom:15px;width:1px;margin:0 auto;background-color:#adb1c0;}
+.certifi-link.default li{width:50%;margin:0;padding:80px 0 0;}
+.certifi-link.default p{position:absolute;top:0;left:0;right:0;}
+.certifi-link.default a{max-width:200px;margin:0 auto;}
+.member-ul{margin:10px 0 0;}
+.member-ul.text_align_left{width:70%;margin:10px auto 0;}
+.member-ul li{position:relative;margin:0 0 7px;padding:0 0 0 14px;line-height:22px;}
+.member-ul li:before{display:block;position:absolute;top:8px;left:0;width:4px;height:4px;background-color:#000;}
+.member-ul i{display:inline-block;position:relative;margin:0 14px 0 0;padding:0 15px 0 0;}
+.member-ul i:after{display:block;position:absolute;top:4px;right:0;width:1px;height:14px;background-color:#d1d1d1;vertical-align:middle;}
+/* 회원가입 */
+.join-box{}
+/* 회원가입 절차 */
+.join-flow{position:relative;margin:60px 0 55px;font-size:0;}
+.join-flow:before{display:block;position:absolute;top:26px;left:14.5%;right:16.5%;height:3px;background-color:#e5e5e5;}
+/*.join-flow:before{display:block;position:absolute;top:26px;left:12.5%;right:12.5%;height:3px;background-color:#e5e5e5;}*/
+.join-flow li{display:inline-block;position:relative;z-index:1;width:33%;/*width:25%*/color:#8c8c8c;font-size:18px;text-align:center;vertical-align: top;}
+.join-flow li:before{display:block;width:56px;height:56px;margin:0 auto 12px;background:url(/common/images/login/bullet2.png) #cacaca no-repeat right 50%;border-radius:100%;color:transparent;}
+.join-flow .current:before{background-color:#0074e2;background-position:0 50%;}
+.join-flow span{display:block;margin:0 0 5px;font-size:15px;font-weight:600;line-height:17px;}
+.join-flow .current span{color:#0074e2;}
+/* 약관 재동의 안내 */
+.reconsent_title{margin:60px 0 50px;}
+.reconsent_title h2{margin:0 0 15px;}
+/* 회원가입 약관 동의 */
+.agree-box{margin:0 60px 45px;}
+.agree-box .text-box{height:178px;margin:20px 0 10px;padding:10px;border:1px solid #b3b1b4;overflow-y:scroll;}
+.allAgree{position:relative; text-align:center;}
+.button-group{margin:40px 0 50px;font-size:0;text-align:center;}
+.button-group *{margin:0 5px;font-size:16px;}
+
+/* 약관동의 체크박스 2019-11-29 서정한 추가 */
+.agreecheckbox{position:relative;}
+
+/* 회원가입 완료 */
+.complete-box{text-align:center;}
+.complete-box .greet{margin:0 0 25px;color:#000;font-size:28px;font-weight:600;line-height:30px;}
+.complete-box .greet:before{display:block;width:397px;height:149px;margin:0 auto 35px;background:url(/common/images/login/member-logo.png) no-repeat left top;}
+.confirm-id{color:#000;font-size:22px;line-height:24px;}
+.confirm-id span,.confirm-id em{font-weight:600;}
+.complete-box .greet span,.confirm-id em{color:#1856b5;}
+/* 아이디, 비번찾기 */
+.find-certifi h2{margin:60px 0 0;text-align:center;}
+.information-box{text-align:center;}
+.text_align_left{text-align:left;}
+.text_align_center{text-align:center;}
+.margin_t_60{margin-top:60px;}
+.margin_b_20{margin-bottom:20px;}
+.information-box h2{margin:60px 0 20px;}
+.information-box p{color:#4c4c4c;margin:0 0 40px;}
+.warning_info{line-height:30px;}
+.em_b_red{color:#b61100;font-weight:600;}
+.result_list li{margin:0 0 10px;font-size:22px;}
+.result_list li em,.result_list li span{font-weight:600;}
+.result_list li span{color:#1856b5;}
+/* 회원정보 2년주기 재동의 시행안내 */
+.dotLineBox{position:relative;width:100%;max-width:1180px;margin:0 auto;padding:1px 0;}
+.dotLineBox > div{position:relative;padding:40px;background-color:#fff;color:#4c4c4c;}
+.dotLineBox:before,.dotLineBox:after,.dotLineBox > div:before,.dotLineBox > div:after{display:block;position:absolute;background:url(/common/images/login/pattern1.png) repeat;}
+.dotLineBox:before,.dotLineBox:after{left:0;width:100%;height:1px;}
+.dotLineBox:before{top:0;}
+.dotLineBox:after{bottom:0;}
+.dotLineBox > div:before,.dotLineBox > div:after{top:0;width:1px;height:100%;}
+.dotLineBox > div:before{left:0;}
+.dotLineBox > div:after{right:0;}
+.dotLineBox h2{margin:0 0 25px;color:#000;font-size:22px;line-height:24px;}
+
+@media screen and (max-width:1100px){
+    .member-service{margin:20px 0 0 0;}
+}
+
+@media screen and (max-width:1000px){
+    .login-box:before {display:none}
+    .login-box > div {width:100%; box-sizing: border-box}
+    .nonMembers-login {padding-top:40px !important; margin-top:50px; border-top:1px solid #adb1c0;}
+
+}
+
+@media screen and (max-width:640px){
+    .loginTop h1 {width:100%; padding:20px 0 0; box-sizing: border-box; font-size:23px;}
+    .loginTop h1 span {position: relative; width: 100%; background-position: center 0;}
+    .loginTop .inner_wrap {padding:0 30px; box-sizing: border-box}
+
+    .content_wrap {margin:0; padding:0 10px}
+
+    .membership h2 {font-size:20px; word-break: keep-all}
+    .membership h3 {font-size:19px;}
+    .membership .text {margin-top:10px; word-break: keep-all}
+    .membership .text br {display: none;}
+
+    .social {margin-top:30px;}
+    .login-box {padding:40px 0;}
+    .login-box > div {padding:0 30px;}
+    .certifi-link {width:100%; margin:20px 0;}
+    .certifi-link li {width:50%; margin:0; text-align: center;}
+    .certifi-link li:before {display:none;}
+    .certifi-link a {display:inline-block; width:auto; padding:0 20px;}
+
+    .social a {padding-left:30px}
+    .social a:before {display:none;}
+
+    .member-service a {padding:0 10px;}
+    .member-service a:first-child {padding-left:0;}
+    .member-service a:last-child {padding-right:0;}
+    .tab-link span, .tab-link a, .tab-link .active {font-size:18px}
+
+    .form-wrap {padding-right:0;}
+    .form-wrap .login-button[type="submit"] {position:relative; width:100%; margin-top:10px; line-height:50px;}
+
+    .dotLineBox h2 {font-size:20px;}
+
+    .join-box {padding: 0 10px;}
+    .join-flow li {word-break: keep-all; font-size:16px;}
+    .join-flow li:before {transform: scale(0.7)}
+    .agree-box {margin: 0 20px 45px; word-break: keep-all}
+
+    .button-group input[type="submit"], .button-group a, .button-group button {width:100%; margin:0; box-sizing: border-box}
+
+
+    .dotLineBox > div {padding:50px 20px;}
+    .complete-box .greet {font-size:20px; margin-bottom:10px}
+    .complete-box .greet:before {display: none;}
+    .confirm-id {font-size:18px;}
+
+    .find-certifi h2 {margin-top:40px;}
+    .certifi-link.default {margin:30px 0 40px;}
+    .certifi-link.default p {word-break: keep-all}
+
+    .information-box h2 {margin-top:40px;}
+    .information-box p {margin-bottom:30px}
+    .result_list li {font-size:18px;}
+
+    .single-row {width:100%;}
+
+    .content_wrap .margin_t_60 {margin-top:40px !important;}
+
+    .socialLogin h2 {margin-top:40px;}
+    .login-box {padding-top:30px;}
+
+    .member-ul.text_align_left {width:100%; margin:0;}
+    .warning_info {word-break: keep-all}
+}
+
+
+/* 2020-01-29 서정한 추가 */
+.loginTop h1 a{display:block; position:absolute;top:0;left:0;width:169px;height:69px;}
+.loginTop h1 a span{position:relative; width:auto; height:69px;}
+@media screen and (max-width:640px){
+.loginTop h1 a{display:inline-block; position:relative; margin:0 20px 6px 0; vertical-align:bottom;}
+}

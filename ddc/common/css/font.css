@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* 나눔 */
+
+
+
+@font-face{
+	font-family:'NanumS';
+	font-weight: 400;
+	src:url("font/NanumSquareR.eot");
+	src:url("font/NanumSquareR.eot?#iefix") format('embedded-opentype'),
+		url("font/NanumSquareR.woff") format('woff');
+}
+
+/*@font-face{*/
+/*	font-family:'NanumS';*/
+/*	font-weight: 600;*/
+/*	src:url("font/NanumSquareB.eot");*/
+/*	src:url("font/NanumSquareB.eot?#iefix") format('embedded-opentype'),*/
+/*		url("font/NanumSquareB.woff") format('woff');*/
+/*}*/
+
+
+/*@font-face{*/
+/*	font-family:'NanumP';*/
+/*	font-weight: 400;*/
+/*	src:url("font/NanumPen.eot");*/
+/*	src:url("font/NanumPen.eot?#iefix") format('embedded-opentype'),*/
+/*		url("font/NanumPen.woff") format('woff');*/
+/*}*/
+/*@font-face{*/
+/*	font-family:'NanumM';*/
+/*	font-weight: 400;*/
+/*	src:url("font/NanumMyeongjo.eot");*/
+/*	src:url("font/NanumMyeongjo.eot?#iefix") format('embedded-opentype'),*/
+/*		url("font/NanumMyeongjo.woff") format('woff');*/
+/*}*/
+
+
+
+/*@font-face{*/
+/*	font-family:'NotoKr';*/
+/*	font-weight: 100;*/
+/*	src:url("font/NotoSansCJKkr-Thin.eot");*/
+/*	src:url("font/NotoSansCJKkr-Thin.eot?#iefix") format('embedded-opentype'),*/
+/*		url("font/NotoSansCJKkr-Thin.woff") format('woff');*/
+/*}*/
+/*@font-face{*/
+/*	font-family:'NotoKr';*/
+/*	font-weight: 200;*/
+/*	src:url("font/NotoSansCJKkr-Light.eot");*/
+/*	src:url("font/NotoSansCJKkr-Light.eot?#iefix") format('embedded-opentype'),*/
+/*		url("font/NotoSansCJKkr-Light.woff") format('woff');*/
+/*}*/
+/*@font-face{*/
+/*	font-family:'NotoKr';*/
+/*	font-weight: 300;*/
+/*	src:url("font/NotoSansCJKkr-DemiLight.eot");*/
+/*	src:url("font/NotoSansCJKkr-DemiLight.eot?#iefix") format('embedded-opentype'),*/
+/*		url("font/NotoSansCJKkr-DemiLight.woff") format('woff');*/
+/*}*/
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 400;
+	src:url("font/NotoSansCJKkr-Regular.eot");
+	src:url("font/NotoSansCJKkr-Regular.eot?#iefix") format('embedded-opentype'),
+		url("font/NotoSansCJKkr-Regular.woff") format('woff');
+}
+/*@font-face{*/
+/*	font-family:'NotoKr';*/
+/*	font-weight: 500;*/
+/*	src:url("font/NotoSansCJKkr-Medium.eot");*/
+/*	src:url("font/NotoSansCJKkr-Medium.eot?#iefix") format('embedded-opentype'),*/
+/*	url("font/NotoSansCJKkr-Medium.woff") format('woff');*/
+/*}*/
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 600;
+	src:url("font/NotoSansCJKkr-Bold.eot");
+	src:url("font/NotoSansCJKkr-Bold.eot?#iefix") format('embedded-opentype'),
+		url("font/NotoSansCJKkr-Bold.woff") format('woff');
+}
+/*@font-face{*/
+/*	font-family:'NotoKr';*/
+/*	font-weight: 700;*/
+/*	src:url("font/NotoSansCJKkr-Black.eot");*/
+/*	src:url("font/NotoSansCJKkr-Black.eot?#iefix") format('embedded-opentype'),*/
+/*	url("font/NotoSansCJKkr-Black.woff") format('woff');*/
+/*}*/
+
+/* 소요단풍 */
+@font-face{
+    font-family:'SOYOMaple';
+    font-weight: 600;
+    src:url("font/SOYOMaple_B.woff") format('woff'),
+    url("font/SOYOMaple_B.woff2") format('woff2');
+}
+@font-face{
+    font-family:'SOYOMaple';
+    font-weight: 400;
+    src:url("font/SOYOMaple_R.woff") format('woff'),
+    url("font/SOYOMaple_R.woff2") format('woff2');
+}

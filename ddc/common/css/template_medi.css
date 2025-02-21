@@ -1,0 +1,52 @@
+
+.temp_wrap p {margin-bottom:20px;}
+
+.temp_medi_title {display:table;margin:-30px auto 45px auto;font-size:30px;color:#000;letter-spacing:-0.05em;font-weight:bold;text-align:center}
+.temp_medi_title:before {display:none;}
+.temp_medi_title.type1 span {display:table-cell;vertical-align:middle;}
+.temp_medi_title.type1 span em {display:inline-block;position:relative;margin-right:40px;padding-right:40px;}
+.temp_medi_title.type1 span em:before {display:block;position:absolute;top:calc(50% - 15px);right:0;width:1px;height:29px;background:#bcbcbc;}
+
+.temp_medi_title.type2 {display:block;position:relative;margin:0 auto 50px auto;text-align:center;}
+.temp_medi_title.type2 span {display:inline-block;position:relative;font-weight:normal;font-size:30px;letter-spacing:-0.025em;}
+.temp_medi_title.type2 span:before {display:block;position:absolute;top:-4px;left:-75px;width:48px;height:31px;background:url('/site/smartmedical-kor/images/contents/cts4485_img4.png') no-repeat;}
+.temp_medi_title.type2 span:after {display:block;position:absolute;top:-4px;right:-75px;width:48px;height:31px;background:url('/site/smartmedical-kor/images/contents/cts4485_img5.png') no-repeat;}
+.temp_medi_title.type2 span em {font-size:30px;font-weight:bold;}
+
+.box.type2.temp_box_medi {margin-bottom:70px;padding:50px;}
+.temp_box_medi .box_wrap {}
+.temp_box_medi .left {display:inline-block;float:left;position:relative;width:435px;height:290px;margin-right:45px;}
+.temp_box_medi .left .logo {display:block;position:absolute;top:-20px;left:-20px;width:110px;height:110px;background:url('/site/smartmedical-kor/images/contents/cts4485_img2.png') no-repeat;font-size:0;}
+.temp_box_medi .right {display:inline-block;float:left;width:calc(100% - 480px);font-size:16px;letter-spacing:-0.025em;}
+.temp_box_medi .right ul > li {margin-top:3px;letter-spacing:-0.025em;}
+
+.temp_medi_img {margin-top:35px;}
+.temp_medi_img .medi_img_wrap {}
+.temp_medi_img ul > li {display:block;float:left;width:50%;}
+
+@media screen and (max-width:1000px) {
+.temp_box_medi .left {float:none;margin-right:0;margin-bottom:30px;width:100%;height:auto;}
+.temp_box_medi .right {width:100%;}
+}
+@media screen and (max-width:800px) {
+.temp_medi_title.type1 span em {display:block;margin:0 auto 20px auto;padding:0;}
+.temp_medi_title.type1 span em:before {display:none;}
+}
+@media screen and (max-width:640px) {
+.box.type2.temp_box_medi {padding:30px;}
+.temp_medi_title {margin-top:-50px;}
+.temp_medi_img ul > li {float:none;width:100%;}
+.temp_medi_img ul > li:nth-child(1) {margin-bottom:10px;}
+.box.type2.temp_box_medi {margin-bottom:30px;}
+.temp_medi_title.type1 span {font-size:25px;}
+.temp_medi_title.type1 span em {width:180px;margin-bottom:10px;}
+.temp_medi_title.type2 {margin-bottom:30px;}
+.temp_medi_title.type2 span {font-size:20px;}
+.temp_medi_title.type2 span:before {top:4px;left:-50px;width:30px;background-size:100%;}
+.temp_medi_title.type2 span:after {top:4px;right:-50px;width:30px;background-size:100%;}
+.temp_medi_title.type2 span em {font-size:20px;}
+}
+@media screen and (max-width:480px) {
+.temp_medi_title.type2 span:before {display:none;}
+.temp_medi_title.type2 span:after {display:none;}
+}

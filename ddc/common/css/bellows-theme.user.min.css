@@ -1,0 +1,121 @@
+.bellows {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+    border-bottom: 1px solid #2980b9;
+	padding:10px 0;
+	background:#fff;
+}
+.bellows__content-wrapper {display:none}
+.bellows__header {
+  position: relative;
+  padding: 10px 10px;
+  border-bottom: 1px solid #2980b9;
+  background: #3498db;
+  color: white;
+}
+.bellows__header h2{
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.bellows__header span {font-family:"NanumS"; font-size:15px}
+.bellows__header h2.map_1{
+  background-image: url("/common/images/cctv/map_icon1.png");
+}
+.bellows__header h2.map_2{
+  background-image: url("/common/images/cctv/map_icon2.png");
+}
+.bellows__header h2.map_3{
+  background-image: url("/common/images/cctv/map_icon3.png");
+}
+.bellows__header h2.map_4{
+  background-image: url("/common/images/cctv/map_icon4.png");
+}
+.bellows__header h2.map_5{
+  background-image: url("/common/images/cctv/map_icon5.png");
+}
+.bellows__header h2.map_6{
+  background-image: url("/common/images/cctv/map_icon6.png");
+}
+.bellows__header h2.map_7{
+  background-image: url("/common/images/cctv/map_icon7.png");
+}
+.bellows__header h2.map_8{
+  background-image: url("/common/images/cctv/map_icon8.png");
+}
+.bellows__header h2.map_9{
+  background-image: url("/common/images/cctv/map_icon9.png");
+}
+.bellows__header h2.map_10{
+  background-image: url("/common/images/cctv/map_icon10.png");
+}
+.bellows__header h2.map_11{
+  background-image: url("/common/images/cctv/map_icon11.png");
+}
+
+.bellows__header h2.map_12{
+  background-image: url("/common/images/cctv/map_icon12.png");
+}
+
+.bellows__header h2.map_16{
+  background-image: url("/common/images/cctv/map_icon16.png");
+}
+
+.bellows__content-wrapper  .bellows__header {border-bottom:none; padding:5px 10px; background:none; color:#333}
+.bellows__content-wrapper  .bellows__header::before, .bellows__content-wrapper  .bellows__header::after {display:none}
+.bellows__header h2 {display:inline-block}
+.bellows__header h2 span{ display:inline-block; padding:3px 0 3px 30px; font-size:12px; font-family:dotum; font-weight:normal}
+.bellows__header:active {background: #2980b9;}
+.bellows__content .bellows__content-wrapper .bellows__content li {font-size:12px; font-family:dotum; font-weight:normal; padding:5px 0 5px 40px}
+.bellows__header::before, .bellows__header::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  z-index: 2;
+  display: block;
+  width: 14px;
+  height: 2px;
+  margin-top: -2px;
+  background: white;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+          transition: transform 0.25s ease-in-out;
+  pointer-events: none;
+}
+
+.bellows__header::before {
+  content: '';
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.bellows__header::after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.bellows__item.bellows--is-open > .bellows__header::before,
+.bellows__item.bellows--is-opening > .bellows__header::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.bellows__item.bellows--is-open > .bellows__header::after,
+.bellows__item.bellows--is-opening > .bellows__header::after {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.bellows__header h1,
+.bellows__header h2,
+.bellows__header h2,
+.bellows__header h4 {
+  margin: 0;
+}
+
+.bellows__content {
+}
+
