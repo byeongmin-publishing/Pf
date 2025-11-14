@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Layout */
+@import url('/resources/common_sw/css/default.css');
+@import url('layout.css');
+@import url('font.css');
+@import url('common.css');
+@import url('main_layout.css');

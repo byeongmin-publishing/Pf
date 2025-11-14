@@ -1,0 +1,167 @@
+/* (주)한신정보기술 ○○○ - 201x.xx */
+
+.header_top .weatherbox{display:none;}
+
+.header_top .gnb_right .list.zoombox{margin-left:20px; padding-right:20px; vertical-align:top; font-size:0;}
+.header_top .gnb_right .list.zoombox .title{display:inline-block; margin-right:15px; line-height:26px; vertical-align:top; color:#333333; font-size:14px; font-weight:500; letter-spacing:0;}
+.header_top .gnb_right .list.zoombox .btnbox{display:inline-block; margin-top:3px;}
+.header_top .gnb_right .list.zoombox .btnbox button{position:relative; width:20px; height:20px; margin:0; padding:0; border:1px solid #c0c9cf; border-radius:3px; vertical-align:top; color:transparent; font-size:0;}
+.header_top .gnb_right .list.zoombox .btnbox button.zoomin{margin-right:5px;}
+.header_top .gnb_right .list.zoombox .btnbox button:before{display:block; position:absolute; top:5px; left:calc(50% - 5px); width:10px; height:9px; background-repeat:no-repeat; background-image:url(../images/common/common_icons2.png); content:'';}
+.header_top .gnb_right .list.zoombox .btnbox button.zoomin:before{background-position:left top;}
+.header_top .gnb_right .list.zoombox .btnbox button.zoomout:before{background-position:-30px top;}
+
+.sub_visual{position:relative; z-index:10; background-repeat:no-repeat; background-position:center center; background-image:url(../images/sub/sub_visual.gif); background-size:cover;}
+.sub_visual .sub_title{display:table; width:100%; margin:0; padding:0; background:none;}
+.sub_visual .sub_title h2{display:table-cell; width:100%; height:145px; line-height:36px; text-align:center; vertical-align:middle; color:#000; font-size:30px; font-weight:600; letter-spacing:0;}
+
+.sub_visual .pathbox{position:relative; padding-right:135px; background-color:#6d7996;}
+.sub_visual .pathbox .path ul li.home{position:relative; float:left;}
+.sub_visual .pathbox .path ul li.home a{display:block; position:relative; width:61px; height:55px; background-color:#576178; color:transparent; font-size:0;}
+.sub_visual .pathbox .path ul li.home a:before{display:block; position:absolute; top:calc(50% - 9px); left:calc(50% - 10px); width:20px; height:18px; background-repeat:no-repeat; background-position:left top; background-image:url(../images/sub/sub_icons.png); content:'';}
+.sub_visual .pathbox .path ul li.list{position:relative; float:left; min-width:180px; box-sizing:border-box;}
+.sub_visual .pathbox .path ul li.list:before{display:block; position:absolute; top:17px; right:0; width:1px; height:20px; background-color:#576178; content:'';}
+.sub_visual .pathbox .path ul li.list .path_btn{display:block; position:relative; width:100%; margin:0; padding:17px 21px 18px 19px; box-sizing:border-box; border:none; text-align:left; line-height:20px; color:#FFF; transition:background-color 200ms ease-in-out;}
+.sub_visual .pathbox .path ul li.list.active .path_btn{background-color:#2b3244;}
+.sub_visual .pathbox .path ul li.list .path_btn:before{display:block; position:absolute; bottom:0; left:19px; width:calc(100% - 38px); height:0; border-top-width:1px; border-top-style:dotted; border-top-color:transparent; content:''; transition:border-top-color 200ms ease-in-out;}
+.sub_visual .pathbox .path ul li.list.active .path_btn:before{border-top-color:#90949d;}
+.sub_visual .pathbox .path ul li.list .path_btn span{display:block; position:relative; padding-right:34px; line-height:20px; font-size:15px; font-weight:600; letter-spacing:0;}
+.sub_visual .pathbox .path ul li.list .path_btn span:before{display:block; position:absolute; top:5px; right:0; width:14px; height:9px; background-repeat:no-repeat; background-position:-30px top; background-image:url(../images/sub/sub_icons.png); content:''; transition:transform 200ms ease-in-out;}
+.sub_visual .pathbox .path ul li.list.active .path_btn span:before{transform:rotateX(180deg);}
+.sub_visual .pathbox .path ul li.list .layer{display:none; position:absolute; top:55px; left:0; width:100%; background-color:#2b3244;}
+.sub_visual .pathbox .path ul li.list .layer ul{max-height:436px; overflow-y:auto; padding:15px 19px 14px 19px;}
+.sub_visual .pathbox .path ul li.list .layer ul li{margin-top:8px;}
+.sub_visual .pathbox .path ul li.list .layer ul li:first-child{margin-top:0;}
+.sub_visual .pathbox .path ul li.list .layer ul li a{display:block; line-height:22px; color:#FFF; font-size:14px; letter-spacing:0;}
+
+/* 분야별정보 path */
+.sub_visual .pathbox.type2 .path ul{position:relative; padding-left:61px;}
+.sub_visual .pathbox.type2 .path ul li.home{position:absolute; top:0; left:0; float:none;}
+.sub_visual .pathbox.type2 .path ul li.list:nth-child(n+3){min-width:0;}
+.sub_visual .pathbox.type2 .path ul li.list a.path_btn span{padding-right:0;}
+.sub_visual .pathbox.type2 .path ul li.list a.path_btn span:before{display:none;}
+@media screen and (min-width:1001px){
+    .pathbox.type2 .sharebox{height:100%;}
+    .pathbox.type2 .sharebox .share{height:100%;}
+    .pathbox.type2 .sharebox .share .share_btn{height:100%;}
+    .pathbox.type2 .sharebox .share .share_btn:before{top:18px;}
+    .pathbox.type2 .sharebox .printbox{height:100%;}
+    .pathbox.type2 .sharebox .printbox .print{height:100%;}
+    .pathbox.type2 .sharebox .printbox .print:before{top:18px;}
+}
+
+
+.sub_visual .pathbox .path_m{display:none;}
+.sub_visual .pathbox .path_m ul li{position:relative; float:left;}
+.sub_visual .pathbox .path_m ul li.home{width:24px; margin-right:4px;}
+.sub_visual .pathbox .path_m ul li a{display:block;}
+.sub_visual .pathbox .path_m ul li.home a{position:relative; height:23px; color:transparent; font-size:0;}
+.sub_visual .pathbox .path_m ul li.home a:before{display:block; position:absolute; top:calc(50% - 9px); left:calc(50% - 10px); width:20px; height:18px; background-repeat:no-repeat; background-position:left -30px; background-image:url(../images/sub/sub_icons.png); content:'';}
+.sub_visual .pathbox .path_m ul li.list{margin-right:9px; padding-right:18px;}
+.sub_visual .pathbox .path_m ul li.list:last-child{margin-right:0; padding-right:0;}
+.sub_visual .pathbox .path_m ul li.list:before{display:block; position:absolute; top:5px; right:0; width:8px; height:13px; background-repeat:no-repeat; background-position:-30px -30px; background-image:url(../images/sub/sub_icons.png); content:'';}
+.sub_visual .pathbox .path_m ul li.list:last-child:before{display:none;}
+.sub_visual .pathbox .path_m ul li.list a{line-height:23px; color:#333333; font-size:15px; letter-spacing:0;}
+.sub_visual .pathbox .path_m ul li.list strong{display:block; line-height:23px; color:#333333; font-size:15px; font-weight:600; letter-spacing:0;}
+
+.sub_visual .pathbox .path_all_m{display:none;}
+
+.pathbox .sharebox{position:absolute; top:0; right:0; width:135px;}
+.pathbox .sharebox .share{position:relative; float:left; width:65px; box-sizing:border-box; border-left:1px solid rgba(0, 0, 0, 0.2);}
+.pathbox .sharebox .share .share_btn{display:block; position:relative; width:100%; height:55px; margin:0; padding:0; border:none; color:transparent; font-size:0;}
+.pathbox .sharebox .share .share_btn:before{display:block; position:absolute; top:calc(50% - 8px); left:calc(50% - 8px); width:17px; height:17px; background-repeat:no-repeat; background-position:-60px top; background-image:url(../images/sub/sub_icons.png); content:'';}
+.pathbox .sharebox .share .layer{display:none; position:absolute; top:0; right:-1px; width:220px; background-color:#576178;}
+.pathbox .sharebox .share .layer ul{padding:20px 20px 30px;}
+.pathbox .sharebox .share .layer ul li{margin-top:5px;}
+.pathbox .sharebox .share .layer ul li:first-child{margin-top:0;}
+.pathbox .sharebox .share .layer ul li .sns_btn{display:block; position:relative; width:100%; margin:0; padding:8px 0 7px 45px; box-sizing:border-box; border:none; line-height:20px; text-align:left; color:#FFF; font-size:14px; letter-spacing:0;}
+.pathbox .sharebox .share .layer ul li .sns_btn:before{display:block; position:absolute; top:0; left:0; width:35px; height:35px; background-repeat:no-repeat; background-image:url(../images/sub/sns_icons.png); content:'';}
+.pathbox .sharebox .share .layer ul li.facebook .sns_btn:before{background-position:left center;}
+.pathbox .sharebox .share .layer ul li.twitter .sns_btn:before{background-position:-35px center;}
+.pathbox .sharebox .share .layer ul li.kakaostory .sns_btn:before{background-position:-70px center;}
+.pathbox .sharebox .share .layer ul li.kakaotalk .sns_btn:before{background-position:-105px center;}
+.pathbox .sharebox .share .layer ul li.linkcopy .sns_btn:before{background-position:-140px center;}
+
+.pathbox .sharebox .share .layer .close{position:absolute; top:14px; right:18px; width:26px; height:26px; margin:0; padding:0; border:none; color:transparent; font-size:0;}
+.pathbox .sharebox .share .layer .close:before{display:block; position:absolute; top:6px; left:6px; width:14px; height:14px; background-repeat:no-repeat; background-position:-150px top; background-image:url(../images/sub/sub_icons.png); content:'';}
+
+
+.pathbox .sharebox .printbox{position:relative; float:left; width:70px; box-sizing:border-box; border-left:1px solid rgba(0, 0, 0, 0.2);}
+.pathbox .sharebox .printbox .print{display:block; position:relative; width:100%; height:55px; margin:0; padding:0; border:none; color:transparent; font-size:0;}
+.pathbox .sharebox .printbox .print:before{display:block; position:absolute; top:calc(50% - 9px); left:calc(50% - 9px); width:19px; height:19px; background-repeat:no-repeat; background-position:-90px top; background-image:url(../images/sub/sub_icons.png); content:'';}
+
+.colgroup{padding-top:45px;padding-bottom: 45px;min-height: 500px;}
+.sub_head .sub_title{padding-bottom:14px; background:none; border-bottom:1px solid #ccc;}
+.sub_head .sub_title h2{color:#2e2e2e; font-size:24px; font-weight:600; line-height:30px;}
+.sub_head .tab_menu_box{margin-bottom:30px;}
+
+/* tablet */
+@media screen and (max-width:1000px){
+    #header .searchbox .search{top:-54px; right:61px;}
+    .sub_visual .cont_wrap{padding:32px 0 9px;}
+    .sub_visual .sub_title{display:block; width:auto; margin-bottom:23px;}
+    .sub_visual .sub_title h2{display:block; width:auto; height:auto; font-size:25px;}
+    .sub_visual .pathbox{padding:9px 40px 8px 0; background-color:transparent;}
+    .sub_visual .pathbox .path{display:none;}
+    .sub_visual .pathbox .path_m{display:block;}
+
+    .sub_visual .pathbox .path_all_m{position:absolute;top:0;right:0;display:block;width:40px;height:40px;background-color:#6d7996;border-radius:40px;}
+    .sub_visual .pathbox .path_all_m .menu_trigger{position:relative;display:block;width:100%;height:100%;color:transparent;overflow:hidden;}
+    .sub_visual .pathbox .path_all_m .menu_trigger:before{display:block;position:absolute;top:50%;left:50%;margin-top:-5px;margin-left:-7px;width:13px;height:9px;background-repeat:no-repeat;background-position:-30px top;background-image:url(../images/sub/sub_icons.png);content:'';transition:transform 200ms ease-in-out;}
+    .sub_visual .pathbox .path_all_m.active .menu_trigger:before{transform:rotateX(180deg);}
+    .sub_visual .pathbox .path{position:absolute;top:50px;left:0;width:100%;z-index:1;background-color:#6d7996;}
+    .sub_visual .pathbox .path .home{display:none;}
+    .sub_visual .pathbox .path .list{float:none;width:100%;max-width:100%;z-index:0;}
+    .sub_visual .pathbox .path .list.active{z-index:1;}
+    .sub_visual .pathbox .path ul li.list:before{width:100%;height:1px;top:auto;bottom:0;}
+    .sub_visual .pathbox .path ul li.list .path_btn{padding-top:10px;padding-bottom:10px;}
+    .sub_visual .pathbox .path ul li.list .path_btn span{font-size:14px;}
+    .sub_visual .pathbox .path ul li.list .layer{top:40px;}
+
+    .pathbox .sharebox{width:40px;top:-62px;right:0;z-index:1;}
+    .pathbox .sharebox .share{float:none; width:40px; border-left:none;}
+    .pathbox .sharebox .share .share_btn{height:40px; background-color:#6d7996; border-radius:40px; overflow:hidden;}
+    .pathbox .sharebox .share .layer{top:-1px; right:0; border-radius:9px; overflow:hidden;}
+
+    .pathbox .sharebox .printbox{display:none;}
+}
+
+/* mobile */
+@media screen and (max-width:640px){
+    #header .searchbox .search{top:-41px; right:35px;}
+    #header .searchbox .search .inputbox .close{width:24px; height:24px; background-position:-210px -30px;}
+    #header .searchbox .search .inputbox .innerbox{top:-5px; right:34px; width:265px; padding:4px 36px 4px 11px;}
+    #header .searchbox .search .inputbox .innerbox input[type="text"]{height:28px; padding:2px 4px; line-height:22px; font-size:13px;}
+    #header .searchbox .search .inputbox .innerbox input[type="text"]::placeholder{font-size:13px;}
+    #header .searchbox .search .inputbox .innerbox .submitbox{top:4px; right:8px; width:28px; height:28px;}
+    #header .searchbox .search .inputbox .innerbox .submitbox:before{top:4px; left:4px; width:20px; height:20px; background-position:-180px top;}
+
+    .sub_visual .cont_wrap{padding:29px 0 17px;}
+    .sub_visual .sub_title{margin-bottom:24px;}
+    .sub_visual .sub_title h2{padding:0 30px; line-height:27px; font-size:18px;}
+    .sub_visual .pathbox{padding:0;}
+    .sub_visual .pathbox .path_m ul li.home{width:22px; margin-right:2px;}
+    .sub_visual .pathbox .path_m ul li.list{margin-right:6px; padding-right:14px;}
+    .sub_visual .pathbox .path_m ul li.list a{font-size:14px;}
+
+    .sub_visual .pathbox .path_m{padding-right:40px;}
+    .sub_visual .pathbox .path_all_m{width:30px;height:30px;}
+    .sub_visual .pathbox .path{top:40px;}
+
+    .pathbox .sharebox{top:-52px;right:0;width:30px;z-index:1;}
+    .pathbox .sharebox .share{width:auto;}
+    .pathbox .sharebox .share .share_btn{height:30px;}
+    .pathbox .sharebox .share .share_btn:before{top:8px; left:9px; width:13px; height:13px; background-position:-60px -30px;}
+    .pathbox .sharebox .share .layer{width:206px;}
+    .pathbox .sharebox .share .layer ul{padding:20px;}
+    .pathbox .sharebox .share .layer ul li{margin-top:3px;}
+    .pathbox .sharebox .share .layer ul li .sns_btn{padding:3px 0 5px 36px; line-height:18px; font-size:13px;}
+    .pathbox .sharebox .share .layer ul li .sns_btn:before{width:25px; height:25px; background-size:125px auto;}
+    .pathbox .sharebox .share .layer ul li.twitter .sns_btn:before{background-position:-25px center;}
+    .pathbox .sharebox .share .layer ul li.kakaostory .sns_btn:before{background-position:-50px center;}
+    .pathbox .sharebox .share .layer ul li.kakaotalk .sns_btn:before{background-position:-75px center;}
+    .pathbox .sharebox .share .layer ul li.linkcopy .sns_btn:before{background-position:-100px center;}
+
+}
+
+

@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="사이트 제목" />
+    <meta name="keywords" content="키워드 입력" />
+    <meta name="description" content="사이트 상세설명" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:site_name" content="사이트명 표시" />
+    <meta property="og:url" content="url 표기" />
+    <meta property="og:image" content="대표 이미지 경로" />
+    <meta property="og:title" content="페이지 제목 표시" />
+    <meta property="og:description" content="페이지 설명 표시" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/site/snmb/images/guide/favicon_512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/site/snmb/images/guide/favicon_192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/site/snmb/images/guide/favicon_32.png" />
+    <link rel="stylesheet" href="/site/snmb/css/font.css" />
+    <link rel="stylesheet" href="/site/snmb/css/main.css" />
+    <script src="/common/js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="/common/js/jquery.screen.min.custom.1.0.2.js"></script>
+    <script src="/common/js/slick.min.custom.1.8.0.14.js"></script>
+    <script src="/common/js/slick.extensions.min.js"></script>
+    <script src="/site/snmb/js/common.js"></script>
+    <script src="/site/snmb/js/main.js"></script>
+    <title>국립서울현충원 - 메인레이아웃</title>
+</head>
+<body id="main" class="main" data-zoom="1" data-mobile-lnb-slide="Y">
+<div class="accessibility">
+    <a href="#container">본문 바로가기</a>
+</div>    <!--//accessibility-->
+<!--// 통합검색 레이어 개발 부분 시작-->
+<div class="sch_layer">    <!--// 초기에는 css로 display:none; 되어있음 -->
+    <button type="button" title="통합검색 레이어창 닫기" class="sch_layer_close start">닫기</button>    <!--//sch_layer_close start-->
+    <div class="sch_wrap">
+        <form action="" class="sch_form">    <!--//action값 꼭 넣을 것-->
+            <fieldset>
+                <legend>통합검색 레이어 검색 창</legend>
+                <div class="sch_form_inner">
+                    <label for="sch_input" class="search_title">검색어를 입력해주세요</label>    <!--//search_title-->
+                    <div class="input_box">
+                        <input type="search" id="sch_input" class="sch_input" value="" placeholder="검색어를 입력해주세요." />    <!--//sch_input-->
+                        <button type="button" title="입력된 검색어 삭제" class="sch_input_close">삭제</button>    <!--//sch_input_close-->
+                        <input type="submit" class="sch_submit" value="검색하기" />    <!--//sch_submit-->
+                    </div>    <!--//input_box-->
+                </div>    <!--//sch_form_inner-->
+            </fieldset>
+        </form>    <!--//sch_form-->
+        <div class="sch_desc">
+            <div class="desc_inner popular">
+                <span class="desc_title">인기검색어</span>    <!--//desc_title-->
+                <ol class="popular_list">
+                    <li>
+                        <span class="num">1</span>    <!--//num-->
+                        <span class="text">인기검색어1</span>    <!--//text-->
+                        <span class="rank up">
+                            <span class="skip">상승</span>11
+                        </span>    <!--//rank up-->
+                    </li>
+                    <li>
+                        <span class="num">2</span>    <!--//num-->
+                        <span class="text">인기검색어2</span>    <!--//text-->
+                        <span class="rank down">
+                            <span class="skip">하락</span>5
+                        </span>    <!--//rank down-->
+                    </li>
+                    <li>
+                        <span class="num">3</span>    <!--//num-->
+                        <span class="text">인기검색어3</span>    <!--//text-->
+                        <span class="rank same">
+                            <span class="skip">동일</span>
+                        </span>    <!--//rank same-->
+                    </li>
+                    <li>
+                        <span class="num">4</span>    <!--//num-->
+                        <span class="text">인기검색어4</span>    <!--//text-->
+                        <span class="rank same">
+                            <span class="skip">동일</span>
+                        </span>    <!--//rank same-->
+                    </li>
+                    <li>
+                        <span class="num">5</span>    <!--//num-->
+                        <span class="text">인기검색어5</span>    <!--//text-->
+                        <span class="rank same">
+                            <span class="skip">동일</span>
+                        </span>    <!--//rank same-->
+                    </li>
+                    <li>
+                        <span class="num">6</span>    <!--//num-->
+                        <span class="text">인기검색어6</span>    <!--//text-->
+                        <span class="rank same">
+                            <span class="skip">동일</span>
+                        </span>    <!--//rank same-->
+                    </li>
+                    <li>
+                        <span class="num">7</span>    <!--//num-->
+                        <span class="text">인기검색어7</span>    <!--//text-->
+                        <span class="rank same">
+                            <span class="skip">동일</span>
+                        </span>    <!--//rank same-->
+                    </li>
+                    <li>
+                        <span class="num">8</span>    <!--//num-->
+                        <span class="text">인기검색어8</span>    <!--//text-->
+                        <span class="rank same">
+                            <span class="skip">동일</span>
+                        </span>    <!--//rank same-->
+                    </li>
+                    <li>
+                        <span class="num">9</span>    <!--//num-->
+                        <span class="text">인기검색어9</span>    <!--//text-->
+                        <span class="rank same">
+                            <span class="skip">동일</span>
+                        </span>    <!--//rank same-->
+                    </li>
+                    <li>
+                        <span class="num">10</span>    <!--//num-->
+                        <span class="text">인기검색어 최대 10개</span>    <!--//text-->
+                        <span class="rank down">
+                            <span class="skip">하락</span>4
+                        </span>    <!--//rank down-->
+                    </li>
+                </ol>    <!--//popular_list-->
+            </div>    <!--//desc_inner popular-->
+            <div class="desc_inner recently">
+                <span class="desc_title">최근검색어</span>    <!--//desc_title-->
+                <ul class="recently_list">
+                    <li>
+                        <span class="text">최근검색어1</span>    <!--//text-->
+                        <button type="button" title="검색어 삭제" class="recently_close">최근검색어1 삭제</button>    <!--//recently_close-->
+                    </li>
+                    <li>
+                        <span class="text">최근검색어2</span>    <!--//text-->
+                        <button type="button" title="검색어 삭제" class="recently_close">최근검색어2 삭제</button>    <!--//recently_close-->
+                    </li>
+                </ul>    <!--//recently_list-->
+                <button type="button" title="최근검색어 전체 삭제" class="recently_all_close">최근검색어 전체 삭제</button>    <!--//recently_all_close-->
+            </div>    <!--//desc_inner recently-->
+        </div>    <!--//sch_desc-->
+    </div>    <!--//sch_wrap-->
+    <button type="button" title="통합검색 레이어창 닫기" class="sch_layer_close end">닫기</button>    <!--//sch_layer_close end-->
+</div>    <!--//sch_layer-->
+<!--// 통합검색 레이어 개발 부분 종료-->
+<div id="wrapper">
+    <header id="header">
+        <div class="header_message"><span class="text">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span></div>    <!--//header_message-->
+        <div class="header_box">
+            <div class="box_etc">
+                <ul class="etc_list">
+                    <li class="etc_item">
+                        <a href="" class="etc_btn" rel="noopener noreferrer">각종신청서</a>    <!--//etc_btn-->
+                    </li>    <!--//etc_item-->
+                    <li class="etc_item type_blank">
+                        <a href="https://www.mpva.go.kr/mpva/index.do" class="etc_btn" target="_blank" title="새창" rel="noopener noreferrer">국가보훈부</a>    <!--//etc_btn-->
+                    </li>    <!--//etc_item-->
+                    <li class="etc_item type_blank">
+                        <a href="https://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do" class="etc_btn" target="_blank" title="새창" rel="noopener noreferrer">국가상징</a>    <!--//etc_btn-->
+                    </li>    <!--//etc_item-->
+                    <li class="etc_item type_drop">
+                        <button type="button" title="화면크기 레이어창 열기" class="etc_btn">화면크기</button>    <!--//etc_btn-->
+                        <div class="drop_menu">
+                            <div class="drop_in">
+                                <ul class="drop_list">
+                                    <li><button type="button" class="xsm">작게</button></li>
+                                    <li><button type="button" class="sm">보통</button></li>
+                                    <li><button type="button" class="md">조금크게</button></li>
+                                    <li><button type="button" class="lg">크게</button></li>
+                                    <li><button type="button" class="xlg">가장크게</button></li>
+                                </ul>    <!--//drop_list-->
+                                <div class="drop_btn"><button type="button">초기화</button></div>    <!--//drop_btn-->
+                            </div>    <!--//drop_in-->
+                        </div>    <!--//drop_menu-->
+                    </li>    <!--//etc_item-->
+                    <li class="etc_item type_drop">
+                        <button type="button" title="언어선택 레이어창 열기" class="etc_btn lang_btn" rel="noopener noreferrer">Language</button>    <!--//etc_btn-->
+                        <div class="drop_menu">
+                            <div class="drop_in">
+                                <ul class="drop_list">
+                                    <li><a href="" target="_blank" title="새창" rel="noopener noreferrer">English</a></li>
+                                </ul>    <!--//drop_list-->
+                            </div>    <!--//drop_in-->
+                        </div>    <!--//drop_menu-->
+                    </li>    <!--//etc_item-->
+                </ul>    <!--//etc_list-->
+            </div>    <!--//box_etc-->
+            <div class="box_inner">
+                <h1 class="logo">
+                    <a href="./index.do" title="메인페이지로 이동" rel="noopener noreferrer">국립서울현충원</a>
+                </h1>    <!--//logo-->
+                <div class="gnb">
+                    <a href="" class="btn_nav login" rel="noopener noreferrer">로그인</a>    <!--//btn_nav login-->
+                    <!--//<a href="" class="btn_nav join" rel="noopener noreferrer">회원가입</a>-->    <!--//btn_nav join-->
+                    <button type="button" title="통합검색 레이어창 열기" class="btn_nav sch">통합검색</button>    <!--//btn_nav sch-->
+                    <div class="menu_show">
+                        <button type="button" title="메뉴열기" class="menu_button">전체메뉴</button>    <!--//menu_button-->
+                    </div>    <!--//menu_show-->
+                </div>    <!--//gnb-->
+            </div>    <!--//box_inner-->
+        </div>    <!--//header_box-->
+        <div class="lnb">
+            <div class="lnb_top_box">
+                <div class="box_etc">
+                    <ul class="etc_list">
+                        <li class="etc_item type_drop">
+                            <button type="button" title="언어선택 레이어창 열기" class="etc_btn lang_btn" rel="noopener noreferrer">Language</button>    <!--//etc_btn-->
+                            <div class="drop_menu">
+                                <div class="drop_in">
+                                    <ul class="drop_list">
+                                        <li><a href="" target="_blank" title="새창" rel="noopener noreferrer">English</a></li>
+                                    </ul>    <!--//drop_list-->
+                                </div>    <!--//drop_in-->
+                            </div>    <!--//drop_menu-->
+                        </li>    <!--//etc_item-->
+                    </ul>    <!--//etc_list-->
+                </div>    <!--//box_etc-->
+                <div class="box_sch">
+                    <div class="sch_wrap">
+                        <form action="" class="sch_form">    <!--//action값 꼭 넣을 것-->
+                            <fieldset>
+                                <legend>통합검색 레이어 검색 영역</legend>
+                                <div class="sch_form_inner">
+                                    <div class="input_box">
+                                        <input type="search" title="검색어 입력" class="sch_input" value="" placeholder="검색어를 입력해주세요." />    <!--//sch_input-->
+                                        <button type="button" title="입력된 검색어 삭제" class="sch_input_close">삭제</button>    <!--//sch_input_close-->
+                                        <input type="submit" class="sch_submit" value="검색하기" />    <!--//sch_submit-->
+                                    </div>    <!--//input_box-->
+                                </div>    <!--//sch_form_inner-->
+                            </fieldset>
+                        </form>    <!--//sch_form-->
+                    </div>    <!--//sch_wrap-->
+                </div>    <!--//box_sch-->
+            </div>    <!--//lnb_top_box-->
+            <nav class="menu eachdown click"><!-- mouse/click 둘중 하나는 꼭 들어가야함, mouseleave:클릭일때 메뉴영역에서 마우스 빠질때 메뉴닫기 -->
+                <h2 class="skip">메뉴</h2>
+                <div class="depth depth1">
+                    <ul class="depth_list depth1_list">
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text" rel="noopener noreferrer"><span><em>CMS 1차 하위-1</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 하위</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text" rel="noopener noreferrer"><span><em>CMS 3차 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text" rel="noopener noreferrer"><span><em>CMS 4차 메뉴</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 하위</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text" rel="noopener noreferrer"><span><em>CMS 3차 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text" rel="noopener noreferrer"><span><em>CMS 4차 메뉴</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text" rel="noopener noreferrer"><span><em>CMS 1차 하위-2</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 하위</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text" rel="noopener noreferrer"><span><em>CMS 3차 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text" rel="noopener noreferrer"><span><em>CMS 4차 메뉴</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 하위</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text" rel="noopener noreferrer"><span><em>CMS 3차 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text spy" title="선택됨" rel="noopener noreferrer"><span><em>CMS 4차 메뉴</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text" target="_blank" title="새창" rel="noopener noreferrer"><span><em>CMS 4차 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text" target="_blank" title="새창" rel="noopener noreferrer"><span><em>CMS 3차 새창</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text" rel="noopener noreferrer"><span><em>CMS 3차 단독</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 단독</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" target="_blank" title="새창" rel="noopener noreferrer"><span><em>CMS 2차 새창</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text" rel="noopener noreferrer"><span><em>CMS 1차 단독-3</em></span></a>    <!--//depth1_text-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text" target="_blank" title="새창" rel="noopener noreferrer"><span><em>CMS 1차 새창-4</em></span></a>    <!--//depth1_text-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text" rel="noopener noreferrer"><span><em>CMS 1차 하위-5</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 단독</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 단독</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text" rel="noopener noreferrer"><span><em>CMS 2차 하위</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text" rel="noopener noreferrer"><span><em>CMS 3차 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text" rel="noopener noreferrer"><span><em>CMS 4차 메뉴</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                    </ul>    <!--//depth1_list-->
+                </div>    <!--//depth1-->
+                <div class="lnb_bottom_box">
+                    <div class="box_etc">
+                        <ul class="etc_list">
+                            <li class="etc_item">
+                                <a href="" class="etc_btn" rel="noopener noreferrer">각종신청서</a>    <!--//etc_btn-->
+                            </li>    <!--//etc_item-->
+                            <li class="etc_item type_blank">
+                                <a href="https://www.mpva.go.kr/mpva/index.do" class="etc_btn" target="_blank" title="새창" rel="noopener noreferrer">국가보훈부</a>    <!--//etc_btn-->
+                            </li>    <!--//etc_item-->
+                            <li class="etc_item type_blank">
+                                <a href="https://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do" class="etc_btn" target="_blank" title="새창" rel="noopener noreferrer">국가상징</a>    <!--//etc_btn-->
+                            </li>    <!--//etc_item-->
+                        </ul>    <!--//etc_list-->
+                    </div>    <!--//box_etc-->
+                </div>    <!--//lnb_bottom_box-->
+            </nav>    <!--//menu-->
+            <div class="menu_hide">
+                <button type="button" class="menu_button">메뉴 닫기</button>    <!--//menu_button-->
+            </div>    <!--//menu_hide-->
+        </div>    <!--//lnb-->
+        <div class="lnb_curtain"><button type="button">메뉴 닫기</button></div>    <!--//lnb_curtain-->
+    </header>    <!--//#header-->
+    <div id="container">
+        <main>
+            <div class="rowgroup rowgroup1">
+                <div class="main_slide_box">
+                    <div class="main_slide_list">
+                        <div class="main_slide_item">
+                            <span class="item_bg" style="background-image:url(/site/snmb/images/main/main_slide_img01.jpg)">슬라이드 이미지1</span>
+                        </div>
+                        <div class="main_slide_item">
+                            <span class="item_bg" style="background-image:url(/site/snmb/images/main/main_slide_img02.jpg)">슬라이드 이미지2</span>
+                        </div>
+                    </div>    <!--//main_slide_list-->
+                    <div class="main_slide_control">
+                        <button type="button" class="slick-arrow prev">이전
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#fff" stroke="none" shape-rendering="optimizeSpeed" d="M24 21.66L14.1 31.56 11.27 28.73 24 16 36.73 28.73 33.9 31.56Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                        <button type="button" class="slick-arrow next">다음
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#fff" stroke="none" shape-rendering="optimizeSpeed" d="M24 26.34L33.9 16.44 36.73 19.27 24 32 11.27 19.27 14.1 16.44Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                        <button type="button" class="slick-arrow auto pause">정지
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#fff" stroke="none" shape-rendering="optimizeSpeed" d="M12 10L16 10 16 38 12 38 12 10ZM32 10L36 10 36 38 32 38 32 10Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                        <button type="button" class="slick-arrow auto play">재생
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#fff" stroke="none" shape-rendering="optimizeSpeed" d="M32.79 24L20 15.47 20 32.53 32.79 24ZM38.75 24.83L17.55 38.96C17.25 39.17 16.85 39.19 16.53 39.01 16.2 38.84 16 38.5 16 38.13L16 9.87C16 9.5 16.2 9.16 16.53 8.99 16.85 8.81 17.25 8.83 17.55 9.04L38.75 23.17C39.03 23.35 39.2 23.67 39.2 24 39.2 24.33 39.03 24.65 38.75 24.83Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                    </div>    <!--//main_slide_control-->
+                    <div class="main_title_box">
+                        <span class="title_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.298 22 8.69525 21.5748 7.29229 20.8248L2 22L3.17629 16.7097C2.42562 15.3063 2 13.7028 2 12C2 6.47715 6.47715 2 12 2ZM13 7H11V14H17V12H13V7Z"></path></svg>
+                        </span>
+                        <h3 class="main_title">국립서울현충원 개방시간 안내</h3>
+                        <ul class="main_text_list">
+                            <li class="main_text_item item1">현충원 내 업무시설 <span class="point1">(충혼당, 전시관)</span> <span class="point2">09:00~18:00</span></li>
+                            <li class="main_text_item item2">정문·동문·통문 <span class="point1">(5개소)</span> <span class="point2">06:00~18:00</span></li>
+                        </ul>
+                    </div>    <!--//main_title_box-->
+                </div>
+                <div class="main_menu_list list_type">
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="68" height="68"/>
+                                            <g>
+                                                <g>
+                                                    <path d="M62.685,66H5.316c-0.354,0-0.685-0.182-0.873-0.482c-0.189-0.299-0.212-0.674-0.059-0.994l3.843-8.053     c0.171-0.359,0.534-0.586,0.932-0.586h48.744c0.364,0,0.702,0.191,0.888,0.504l4.781,8.053c0.188,0.318,0.192,0.715,0.01,1.037     C63.398,65.801,63.056,66,62.685,66z M6.952,63.936h53.919l-3.555-5.988H9.811L6.952,63.936z"/>
+                                                </g>
+                                                <path d="M37.773,28.624c-0.168,0-0.336-0.04-0.489-0.122l-3.854-2.073l-3.894,2c-0.349,0.179-0.771,0.145-1.086-0.089    c-0.316-0.234-0.472-0.627-0.401-1.014l0.779-4.307l-3.104-3.084c-0.279-0.276-0.377-0.688-0.251-1.061    c0.125-0.372,0.45-0.642,0.84-0.695l4.336-0.588l1.975-3.906c0.176-0.348,0.532-0.566,0.922-0.566c0.003,0,0.006,0,0.01,0    c0.393,0.004,0.749,0.229,0.92,0.584l1.899,3.942l4.325,0.67c0.389,0.06,0.709,0.335,0.827,0.71    c0.117,0.375,0.013,0.785-0.271,1.056l-3.163,3.026l0.699,4.32c0.063,0.388-0.101,0.777-0.42,1.006    C38.193,28.561,37.983,28.624,37.773,28.624z M33.441,24.23c0.168,0,0.336,0.041,0.488,0.123l2.49,1.339l-0.451-2.791    c-0.054-0.336,0.06-0.676,0.305-0.911l2.044-1.955l-2.795-0.433c-0.336-0.052-0.624-0.266-0.771-0.571l-1.228-2.548l-1.276,2.523    c-0.152,0.304-0.445,0.512-0.782,0.558l-2.802,0.381l2.007,1.992c0.241,0.239,0.349,0.582,0.288,0.916l-0.504,2.783l2.515-1.292    C33.117,24.269,33.279,24.23,33.441,24.23z"/>
+                                                <g>
+                                                    <path d="M48.091,43.684H18.903c-0.57,0-1.032-0.463-1.032-1.033s0.462-1.031,1.032-1.031h29.188c0.57,0,1.032,0.461,1.032,1.031     S48.661,43.684,48.091,43.684z"/>
+                                                    <path d="M43.059,49.219H23.937c-0.57,0-1.032-0.463-1.032-1.031c0-0.57,0.462-1.033,1.032-1.033h19.122     c0.57,0,1.032,0.463,1.032,1.033C44.091,48.756,43.629,49.219,43.059,49.219z"/>
+                                                </g>
+                                                <path d="M54.633,56.398c-0.57,0-1.032-0.461-1.032-1.031V10.311c0-0.143-0.116-0.259-0.259-0.259h-5.464    c-0.275,0-0.539-0.109-0.732-0.305c-3.64-3.665-8.486-5.684-13.648-5.684c-5.163,0-10.009,2.019-13.647,5.684    c-0.194,0.195-0.457,0.305-0.732,0.305h-5.466c-0.142,0-0.258,0.116-0.258,0.259v45.057c0,0.57-0.462,1.031-1.032,1.031    s-1.032-0.461-1.032-1.031V10.311c0-1.281,1.042-2.322,2.322-2.322h5.042C22.686,4.122,27.926,2,33.497,2    s10.812,2.122,14.804,5.988h5.041c1.281,0,2.323,1.041,2.323,2.322v45.057C55.665,55.938,55.203,56.398,54.633,56.398z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item_text">안장신청</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="68" height="68"/>
+                                            <path d="M61.557,59.063H6.442c-1.28,0-2.322-1.043-2.322-2.322v-29.7H3.031C2.461,27.04,2,26.578,2,26.008V11.26   c0-1.28,1.041-2.322,2.322-2.322h59.354C64.958,8.938,66,9.979,66,11.26v14.748c0,0.57-0.462,1.032-1.032,1.032h-1.089v29.7   C63.879,58.02,62.838,59.063,61.557,59.063z M4.063,24.977h1.089c0.57,0,1.032,0.462,1.032,1.031V56.74   c0,0.141,0.115,0.258,0.258,0.258h55.114c0.143,0,0.258-0.117,0.258-0.258V26.008c0-0.569,0.462-1.031,1.032-1.031h1.089V11.26   c0-0.142-0.116-0.258-0.259-0.258H4.322c-0.143,0-0.259,0.116-0.259,0.258V24.977z"/>
+                                            <path d="M64.968,35.031H3.031C2.461,35.031,2,34.57,2,34s0.461-1.031,1.031-1.031h61.937C65.538,32.969,66,33.43,66,34   S65.538,35.031,64.968,35.031z"/>
+                                        </g>
+                                        <path d="M39.478,35.032H28.522c-0.57,0-1.033-0.462-1.033-1.032s0.463-1.032,1.033-1.032h10.955c0.57,0,1.033,0.462,1.033,1.032  S40.048,35.032,39.478,35.032z"/>
+                                    </svg>
+                                </span>
+                                <span class="item_text">이장신청</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="68" height="68"/>
+                                            <g>
+                                                <path d="M40.987,43.041c-0.168,0-0.336-0.041-0.488-0.123l-6.602-3.551l-6.668,3.426c-0.35,0.178-0.771,0.145-1.086-0.09    c-0.316-0.232-0.471-0.625-0.402-1.012l1.338-7.377l-5.318-5.282c-0.279-0.277-0.377-0.688-0.252-1.061s0.451-0.642,0.84-0.695    l7.428-1.007l3.381-6.69c0.178-0.352,0.541-0.523,0.932-0.567c0.393,0.004,0.75,0.23,0.92,0.585l3.254,6.753l7.408,1.146    c0.387,0.061,0.709,0.336,0.826,0.711c0.117,0.374,0.012,0.784-0.271,1.056l-5.416,5.182l1.197,7.399    c0.063,0.389-0.102,0.779-0.422,1.006C41.407,42.977,41.198,43.041,40.987,43.041z M33.907,37.169c0.17,0,0.338,0.041,0.49,0.123    l5.236,2.817l-0.949-5.871c-0.055-0.336,0.061-0.676,0.305-0.91l4.299-4.111l-5.877-0.911c-0.336-0.052-0.625-0.266-0.771-0.571    l-2.582-5.357l-2.684,5.308c-0.152,0.304-0.445,0.512-0.781,0.558L24.7,29.041l4.219,4.192c0.24,0.239,0.348,0.582,0.287,0.916    l-1.061,5.852l5.291-2.718C33.585,37.207,33.747,37.169,33.907,37.169z"/>
+                                                <g>
+                                                    <path d="M44.856,57.652c-0.402,0-0.785-0.236-0.951-0.631c-0.223-0.525,0.023-1.131,0.549-1.352     c9.965-4.215,16.404-13.93,16.404-24.748c0-14.809-12.049-26.858-26.857-26.858c-14.811,0-26.859,12.05-26.859,26.858     c0,10.346,6.049,19.885,15.41,24.303c0.516,0.244,0.736,0.859,0.494,1.375c-0.244,0.516-0.857,0.734-1.375,0.492     c-10.08-4.758-16.594-15.029-16.594-26.17C5.077,14.975,18.052,2,34.001,2c15.947,0,28.922,12.975,28.922,28.922     c0,11.65-6.934,22.109-17.666,26.648C45.126,57.625,44.991,57.652,44.856,57.652z"/>
+                                                    <path d="M59.954,66H8.044c-0.354,0-0.684-0.182-0.873-0.482c-0.188-0.299-0.211-0.676-0.057-0.996l3.811-7.961     c0.172-0.359,0.533-0.588,0.932-0.588h43.357c0.363,0,0.699,0.191,0.887,0.504l4.742,7.963c0.189,0.318,0.193,0.715,0.01,1.039     C60.669,65.801,60.325,66,59.954,66z M9.683,63.936h48.455l-3.512-5.898H12.507L9.683,63.936z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item_text">위패신청</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="68" height="68"/>
+                                            <g>
+                                                <path d="M33.995,60.475c-0.148,0-0.297-0.033-0.434-0.096c-0.473-0.221-11.605-5.449-18.539-12.38C8.582,41.557,2,33.738,2,24.594    c0-9.413,7.656-17.07,17.065-17.07c6.309,0,11.953,3.393,14.93,8.812c2.977-5.419,8.617-8.812,14.934-8.812    c9.409,0,17.069,7.658,17.069,17.07c0,10.327-6.473,17.987-11.336,22.852c-8.245,8.246-19.804,12.771-20.296,12.958    C34.249,60.451,34.124,60.475,33.995,60.475z M19.065,9.587c-8.272,0-15.003,6.731-15.003,15.006    c0,8.391,6.277,15.802,12.421,21.946c5.953,5.951,15.484,10.77,17.547,11.775c2.125-0.881,12.09-5.244,19.171-12.33    c7.422-7.417,10.73-14.015,10.73-21.391c0-8.275-6.73-15.006-15.003-15.006c-6.223,0-11.707,3.752-13.973,9.558    c-0.152,0.396-0.535,0.657-0.961,0.657c-0.422,0.001-0.805-0.26-0.961-0.656C30.769,13.339,25.284,9.587,19.065,9.587z"/>
+                                                <g>
+                                                    <path d="M33.077,38.577c-0.004,0-0.008,0-0.008,0c-0.219-0.002-5.387-0.076-8.711-3.397c-3.324-3.326-3.398-8.495-3.398-8.714     c-0.004-0.276,0.105-0.542,0.301-0.737c0.199-0.195,0.465-0.296,0.738-0.302c0.219,0.001,5.387,0.078,8.707,3.4l0,0l0,0     c3.324,3.322,3.402,8.491,3.402,8.71c0.004,0.276-0.105,0.542-0.301,0.737C33.612,38.469,33.351,38.577,33.077,38.577z      M23.124,27.59c0.203,1.525,0.82,4.254,2.691,6.13c1.875,1.873,4.605,2.49,6.129,2.694c-0.203-1.525-0.824-4.253-2.695-6.127l0,0     C27.374,28.412,24.647,27.794,23.124,27.59z"/>
+                                                    <path d="M34.554,38.577c-0.273,0-0.535-0.108-0.73-0.303c-0.195-0.195-0.305-0.461-0.301-0.737c0-0.219,0.078-5.388,3.402-8.71     l0,0c3.32-3.323,8.488-3.399,8.707-3.4c0.313,0.009,0.543,0.106,0.738,0.302s0.305,0.461,0.301,0.737     c0,0.219-0.074,5.387-3.395,8.713c-3.324,3.322-8.496,3.396-8.715,3.398C34.562,38.577,34.558,38.577,34.554,38.577z      M44.511,27.59c-1.527,0.204-4.254,0.822-6.125,2.697l0,0c-1.875,1.874-2.496,4.602-2.699,6.127     c1.523-0.204,4.254-0.821,6.129-2.695C43.69,31.844,44.308,29.115,44.511,27.59z M37.655,29.558h0.012H37.655z"/>
+                                                    <path d="M33.757,46.583c-0.57,0-1.031-0.461-1.031-1.031v-8.006c0-0.57,0.461-1.032,1.031-1.032s1.031,0.462,1.031,1.032v8.006     C34.788,46.122,34.327,46.583,33.757,46.583z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item_text">배우자 합장신청</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="68" height="68"/>
+                                            <g>
+                                                <path d="M36.695,57.924c-0.271,0-0.534-0.105-0.73-0.301c-0.24-0.242-0.347-0.586-0.283-0.922l1.521-8.113    c0.105-0.561,0.646-0.926,1.205-0.824c0.56,0.105,0.929,0.645,0.824,1.205L37.988,55.6l6.631-1.244    c0.561-0.1,1.101,0.266,1.205,0.824c0.105,0.561-0.264,1.1-0.824,1.205l-8.114,1.521C36.823,57.918,36.759,57.924,36.695,57.924z"/>
+                                                <path d="M45.041,56.404c-0.265,0-0.529-0.102-0.73-0.303l-6.824-6.824c-0.193-0.193-0.303-0.457-0.302-0.73    c0-0.275,0.109-0.537,0.304-0.73l19.631-19.552c0.796-0.797,2.093-0.796,2.892,0.001l5.392,5.392c0.797,0.798,0.797,2.096,0,2.894    L45.769,56.104C45.567,56.303,45.304,56.404,45.041,56.404z M39.678,48.549l5.364,5.363l18.901-18.823l-5.393-5.363L39.678,48.549    z"/>
+                                                <path d="M8.158,64.73c-0.57,0-1.032-0.463-1.032-1.033s0.462-1.031,1.032-1.031c1.621,0,2.868-0.449,3.707-1.336    c1.384-1.463,1.302-3.717,1.301-3.74L13.164,3.551c0-0.569,0.462-1.031,1.032-1.031s1.032,0.462,1.032,1.031v53.982    c0.006,0.072,0.146,3.094-1.864,5.217C12.121,64.064,10.369,64.73,8.158,64.73z"/>
+                                                <path d="M48.704,20.822H22.315c-0.57,0-1.032-0.462-1.032-1.032c0-0.569,0.462-1.031,1.032-1.031h26.389    c0.57,0,1.032,0.462,1.032,1.031C49.736,20.36,49.274,20.822,48.704,20.822z"/>
+                                                <path d="M48.704,28.941H22.315c-0.57,0-1.032-0.461-1.032-1.031s0.462-1.032,1.032-1.032h26.389c0.57,0,1.032,0.462,1.032,1.032    S49.274,28.941,48.704,28.941z"/>
+                                                <path d="M35.51,37.062H22.315c-0.57,0-1.032-0.462-1.032-1.032c0-0.569,0.462-1.031,1.032-1.031H35.51    c0.57,0,1.032,0.462,1.032,1.031C36.542,36.6,36.08,37.062,35.51,37.062z"/>
+                                                <path d="M35.51,46.197H22.315c-0.57,0-1.032-0.463-1.032-1.033s0.462-1.032,1.032-1.032H35.51c0.57,0,1.032,0.462,1.032,1.032    S36.08,46.197,35.51,46.197z"/>
+                                                <path d="M45.363,65.48H13.478C6.076,65.48,2,62.408,2,56.828V46.455c0-1.281,1.041-2.323,2.322-2.323h8.66l0.176-39.301    c0.006-1.274,1.048-2.312,2.322-2.312h39.038c1.281,0,2.322,1.041,2.322,2.322v26.113c0,0.57-0.462,1.031-1.032,1.031    c-0.569,0-1.031-0.461-1.031-1.031V4.842c0-0.143-0.116-0.259-0.259-0.259H15.48c-0.142,0-0.258,0.115-0.258,0.257l-0.181,40.329    c-0.003,0.567-0.464,1.028-1.032,1.028H4.322c-0.143,0-0.258,0.115-0.258,0.258v10.373c0,4.371,3.167,6.588,9.413,6.588h31.886    c5.366,0,9.414-3.705,9.414-8.617v-9.635c0-0.57,0.462-1.032,1.031-1.032c0.57,0,1.032,0.462,1.032,1.032v9.635    C56.841,60.889,51.906,65.48,45.363,65.48z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item_text">생전 안장신청</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="68.002" height="68"/>
+                                            <g>
+                                                <g>
+                                                    <path d="M59.236,45.447h-5.141c-0.566,0-1.031-0.463-1.031-1.033s0.465-1.031,1.031-1.031h4.109V8.98     c0-0.143-0.117-0.26-0.258-0.26H10.057c-0.141,0-0.258,0.117-0.258,0.26v34.402H35.58c0.57,0,1.035,0.461,1.035,1.031     s-0.465,1.033-1.035,1.033H8.768c-0.57,0-1.035-0.463-1.035-1.033V8.98c0-1.281,1.043-2.322,2.324-2.322h47.891     c1.281,0,2.32,1.041,2.32,2.322v35.434C60.268,44.984,59.807,45.447,59.236,45.447z"/>
+                                                    <path d="M63.994,58.529H4.01c-0.684,0-1.313-0.342-1.684-0.914s-0.43-1.285-0.148-1.908l5.66-11.74     c0.246-0.512,0.863-0.729,1.379-0.482c0.512,0.248,0.727,0.865,0.48,1.379L4.049,56.574l59.945-0.109l-5.688-11.602     c-0.246-0.514-0.031-1.131,0.48-1.379c0.516-0.248,1.133-0.031,1.379,0.482l5.648,11.711c0.293,0.652,0.234,1.365-0.137,1.938     S64.678,58.529,63.994,58.529z"/>
+                                                    <path d="M38.209,21.34H17.178c-0.57,0-1.031-0.463-1.031-1.033s0.461-1.031,1.031-1.031h21.031c0.57,0,1.031,0.461,1.031,1.031     S38.779,21.34,38.209,21.34z"/>
+                                                    <path d="M27.693,29.752H17.178c-0.57,0-1.031-0.463-1.031-1.033s0.461-1.031,1.031-1.031h10.516c0.57,0,1.031,0.461,1.031,1.031     S28.264,29.752,27.693,29.752z"/>
+                                                </g>
+                                                <g>
+                                                    <path d="M44.768,54.223c-5.371,0-9.734-4.367-9.734-9.734s4.363-9.734,9.734-9.734c5.367,0,9.73,4.367,9.73,9.734     S50.135,54.223,44.768,54.223z M44.768,36.818c-4.23,0-7.672,3.441-7.672,7.67s3.441,7.67,7.672,7.67     c4.227,0,7.668-3.441,7.668-7.67S48.994,36.818,44.768,36.818z"/>
+                                                    <path d="M59.295,61.342c-0.281,0-0.563-0.115-0.766-0.34l-8.594-9.492c-0.383-0.422-0.352-1.076,0.07-1.457     c0.422-0.385,1.074-0.352,1.457,0.07l8.598,9.494c0.383,0.422,0.348,1.074-0.074,1.457     C59.791,61.254,59.541,61.342,59.295,61.342z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item_text">안장자 찾기</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type7">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="68" height="68"/>
+                                            <g>
+                                                <path d="M51,34.797H34.258c-0.566,0-1.031-0.462-1.031-1.032V13.677c0-0.57,0.465-1.032,1.031-1.032    c0.57,0,1.035,0.462,1.035,1.032v19.056H51c0.57,0,1.031,0.462,1.031,1.032S51.57,34.797,51,34.797z"/>
+                                                <path d="M33.996,66C16.352,66,2,51.645,2,34S16.352,2,33.996,2C51.645,2,66,16.355,66,34S51.645,66,33.996,66z M33.996,4.063    C17.492,4.063,4.063,17.493,4.063,34c0,16.508,13.43,29.936,29.934,29.936c16.508,0,29.938-13.428,29.938-29.936    C63.934,17.493,50.504,4.063,33.996,4.063z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item_text">봉사활동 신청</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main_slide_item">
+                        <a href="" class="item_area" rel="noopener noreferrer">
+                            <span class="item_inner">
+                                <span class="item_icon type8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 68 68">
+                                        <g>
+                                            <rect fill="none" width="67.996" height="68"/>
+                                            <g>
+                                                <g>
+                                                    <path d="M62.266,66H5.73c-1.281,0-2.324-1.041-2.324-2.322v-35.93c0-2.578,1.281-4.772,4.148-7.114     c0.438-0.358,1.094-0.297,1.453,0.146c0.359,0.441,0.293,1.092-0.148,1.452c-2.375,1.939-3.387,3.59-3.387,5.516v35.93     c0,0.141,0.117,0.258,0.258,0.258h56.535c0.141,0,0.262-0.117,0.262-0.258v-35.93c0-1.801-1.414-4.16-3.359-5.608     c-0.457-0.341-0.551-0.987-0.211-1.444s0.984-0.553,1.441-0.212c2.508,1.865,4.191,4.785,4.191,7.265v35.93     C64.59,64.959,63.547,66,62.266,66z"/>
+                                                    <path d="M22.367,11.929c-0.316,0-0.625-0.145-0.828-0.418c-0.344-0.458-0.246-1.104,0.211-1.444l8.059-5.975     C30.066,3.891,32.563,2,34.566,2c2.039,0,4.375,1.98,4.637,2.207l7.281,5.629c0.453,0.349,0.535,0.997,0.188,1.448     s-1,0.534-1.449,0.186l-7.328-5.667c-0.805-0.695-2.367-1.739-3.328-1.739c-0.98,0-2.676,1.026-3.512,1.674l-8.074,5.988     C22.797,11.862,22.582,11.929,22.367,11.929z"/>
+                                                    <path d="M33.84,55.125c-1.734,0-4.125-2.027-4.723-2.559L3.863,35.64c-0.473-0.317-0.598-0.959-0.281-1.432     c0.316-0.474,0.957-0.602,1.434-0.283l25.313,16.966c0.039,0.027,0.078,0.059,0.113,0.092c1.117,1.004,2.75,2.078,3.398,2.078     c0.715,0,2.441-1.207,3.414-2.08c0.039-0.033,0.078-0.064,0.121-0.092l25.613-16.967c0.477-0.315,1.113-0.185,1.43,0.29     c0.316,0.476,0.188,1.116-0.289,1.431L38.574,52.568C37.973,53.102,35.574,55.125,33.84,55.125z"/>
+                                                    <path d="M8.207,38.403c-0.57,0-1.031-0.462-1.031-1.032V12.187c0-1.281,1.043-2.322,2.32-2.322H58.5     c1.281,0,2.32,1.041,2.32,2.322v25.154c0,0.57-0.461,1.032-1.031,1.032s-1.031-0.462-1.031-1.032V12.187     c0-0.14-0.117-0.259-0.258-0.259H9.496c-0.141,0-0.258,0.119-0.258,0.259v25.185C9.238,37.941,8.777,38.403,8.207,38.403z"/>
+                                                </g>
+                                                <path d="M50.824,25.271H17.172c-0.57,0-1.031-0.462-1.031-1.032s0.461-1.032,1.031-1.032h33.652c0.57,0,1.035,0.462,1.035,1.032    S51.395,25.271,50.824,25.271z"/>
+                                                <path d="M50.824,33.758H17.172c-0.57,0-1.031-0.462-1.031-1.032s0.461-1.032,1.031-1.032h33.652c0.57,0,1.035,0.462,1.035,1.032    S51.395,33.758,50.824,33.758z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item_text">참배추모글 남기기</span>
+                                <span class="item_arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"></path></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>    <!--//main_menu_list-->
+            </div>    <!--//rowgroup1-->
+            <div class="rowgroup rowgroup2">
+                <div class="notice_box">
+                    <h3 class="notice_title">알림마당</h3>
+                    <div class="notice_tab_box">
+                        <div class="notice_tab_list">
+                            <div class="notice_tab_item active">
+                                <button type="button" title="선택됨" class="item_area">전체</button>
+                            </div>
+                            <div class="notice_tab_item">
+                                <button type="button" class="item_area">공지사항</button>
+                            </div>
+                            <div class="notice_tab_item">
+                                <button type="button" class="item_area">채용공지</button>
+                            </div>
+                            <div class="notice_tab_item">
+                                <button type="button" class="item_area">자주묻는질문</button>
+                            </div>
+                        </div>
+                    </div>    <!--//notice_tab_box-->
+
+                    <!--//전체-->
+                    <div class="notice_inner active">
+                        <div class="notice_list">
+                            <!--
+                            ★★개발 요청사항★★
+                            .notice_item 복사해서 사용해주세요
+                            .notice_item .item_area href 에 링크 넣어주세요
+                            글 종류에 따라 .notice_item .type_text 텍스트 변경해주세요
+                            <em class="type_text">공지사항</em>
+                            <em class="type_text">채용공지</em>
+                            <em class="type_text">자주묻는질문</em>
+                            .notice_item .item_title em 에 글 제목 넣어주세요
+                            .notice_item .item_date 에 날짜 넣어주세요
+                            -->
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">채용공지</em>
+                                    </span>
+                                    <span class="item_title"><em>국립서울현충원 공무직[환경미화, 시설, 조리] 근로자 채용시험 최종 합격자 공고</em></span>
+                                    <span class="item_date">2025-02-07</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>2025년 국립서울현충원 설 연휴 기간 이용 안내</em></span>
+                                    <span class="item_date">2025-01-16</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>2025년 국립서울현충원 설 연휴 기간 셔틀버스 이용 안내</em></span>
+                                    <span class="item_date">2025-01-16</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>충혼당 정식명패 교체현황 공지(25.1.22.)기준</em></span>
+                                    <span class="item_date">2025-01-16</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>2025년도 국립서울현충원 유품 · 호국 전시관 휴관일 공지</em></span>
+                                    <span class="item_date">2025-01-15</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//notice_inner-->
+
+                    <!--//공지사항-->
+                    <div class="notice_inner">
+                        <div class="notice_list">
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>2025년 국립서울현충원 설 연휴 기간 이용 안내</em></span>
+                                    <span class="item_date">2025-01-16</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>2025년 국립서울현충원 설 연휴 기간 셔틀버스 이용 안내</em></span>
+                                    <span class="item_date">2025-01-16</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>충혼당 정식명패 교체현황 공지(25.1.22.)기준</em></span>
+                                    <span class="item_date">2025-01-16</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>2025년도 국립서울현충원 유품 · 호국 전시관 휴관일 공지</em></span>
+                                    <span class="item_date">2025-01-15</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">공지사항</em>
+                                    </span>
+                                    <span class="item_title"><em>2025년 국립서울현충원 벽걸이 달력 재배포 안내</em></span>
+                                    <span class="item_date">2025-01-10</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//notice_inner-->
+
+                    <!--//채용공지-->
+                    <div class="notice_inner">
+                        <div class="notice_list">
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">채용공지</em>
+                                    </span>
+                                    <span class="item_title"><em>국립서울현충원 공무직[환경미화, 시설, 조리] 근로자 채용시험 최종 합격자 공고 국립서울현충원 공무직[환경미화, 시설, 조리] 근로자 채용시험 최종 합격자 공고</em></span>
+                                    <span class="item_date">2025-02-07</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">채용공지</em>
+                                    </span>
+                                    <span class="item_title"><em>국립서울현충원 공무직 환경미화, 시설, 조리 분야 근로자 채용 공고</em></span>
+                                    <span class="item_date">2025-01-08</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">채용공지</em>
+                                    </span>
+                                    <span class="item_title"><em>국립서울현충원 조리직 근로자[일용직] 채용 공고</em></span>
+                                    <span class="item_date">2025-02-07</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">채용공지</em>
+                                    </span>
+                                    <span class="item_title"><em>국립서울현충원 일반직 공무원 전입희망자 모집 공고문</em></span>
+                                    <span class="item_date">2025-01-08</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">채용공지</em>
+                                    </span>
+                                    <span class="item_title"><em>2024년 추석 기간 환경미화 일용 근로자 채용계획 공고</em></span>
+                                    <span class="item_date">2024-11-25</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//notice_inner-->
+
+                    <!--//자주묻는질문-->
+                    <div class="notice_inner">
+                        <div class="notice_list">
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">자주묻는질문</em>
+                                    </span>
+                                    <span class="item_title"><em>내일 할 거</em></span>
+                                    <span class="item_date">2024-12-03</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">자주묻는질문</em>
+                                    </span>
+                                    <span class="item_title"><em>수요일에 아이콘 ai 파일로 달라고 하기</em></span>
+                                    <span class="item_date">2024-12-03</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">자주묻는질문</em>
+                                    </span>
+                                    <span class="item_title"><em>전시 · 주요행사 · 교육 2줄될 때 여쭤보기</em></span>
+                                    <span class="item_date">2024-12-03</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">자주묻는질문</em>
+                                    </span>
+                                    <span class="item_title"><em>제목</em></span>
+                                    <span class="item_date">2024-12-03</span>
+                                </a>
+                            </div>
+                            <div class="notice_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_type">
+                                        <em class="type_text">자주묻는질문</em>
+                                    </span>
+                                    <span class="item_title"><em>제목</em></span>
+                                    <span class="item_date">2024-12-03</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//notice_inner-->
+                </div>
+
+                <!--//전체-->
+                <div class="popup_slide_box">
+                    <div class="popup_slide_list">
+                        <!--
+                        ★★개발 요청사항★★
+                        .popup_slide_item 복사해서 사용해주세요
+                        .popup_slide_item .item_area href 에 링크 넣어주세요
+                        .popup_slide_item .item_img src 에 이미지 링크 넣어주세요
+                        .popup_slide_item .item_bg style="background-image:url()" 에 같은 이미지 링크 넣어주세요
+                        -->
+                        <div class="popup_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <img class="item_img" src="/site/snmb/images/main/popup_slide_img01.jpg" alt="">
+                                <span class="item_bg" style="background-image:url(/site/snmb/images/main/popup_slide_img01.jpg)"></span>
+                            </a>
+                        </div>
+                        <div class="popup_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <img class="item_img" src="/site/snmb/images/main/popup_slide_img02.jpg" alt="">
+                                <span class="item_bg" style="background-image:url(/site/snmb/images/main/popup_slide_img02.jpg)"></span>
+                            </a>
+                        </div>
+                        <div class="popup_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <img class="item_img" src="/site/snmb/images/main/popup_slide_img01.jpg" alt="">
+                                <span class="item_bg" style="background-image:url(/site/snmb/images/main/popup_slide_img01.jpg)"></span>
+                            </a>
+                        </div>
+                        <div class="popup_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <img class="item_img" src="/site/snmb/images/main/popup_slide_img02.jpg" alt="">
+                                <span class="item_bg" style="background-image:url(/site/snmb/images/main/popup_slide_img02.jpg)"></span>
+                            </a>
+                        </div>
+                        <div class="popup_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <img class="item_img" src="/site/snmb/images/main/popup_slide_img01.jpg" alt="">
+                                <span class="item_bg" style="background-image:url(/site/snmb/images/main/popup_slide_img01.jpg)"></span>
+                            </a>
+                        </div>
+                        <div class="popup_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <img class="item_img" src="/site/snmb/images/main/popup_slide_img02.jpg" alt="">
+                                <span class="item_bg" style="background-image:url(/site/snmb/images/main/popup_slide_img02.jpg)"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popup_slide_control">
+                        <div class="popup_slide_dots">
+
+                        </div>
+                        <span class="slick-text current"></span>
+                        <span class="slick-text slice">/</span>
+                        <span class="slick-text total"></span>
+                        <button type="button" class="slick-arrow auto pause">정지
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#1d1d1d" stroke="none" shape-rendering="optimizeSpeed" d="M12 10L16 10 16 38 12 38 12 10ZM32 10L36 10 36 38 32 38 32 10Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                        <button type="button" class="slick-arrow auto play">재생
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#1d1d1d" stroke="none" shape-rendering="optimizeSpeed" d="M32.79 24L20 15.47 20 32.53 32.79 24ZM38.75 24.83L17.55 38.96C17.25 39.17 16.85 39.19 16.53 39.01 16.2 38.84 16 38.5 16 38.13L16 9.87C16 9.5 16.2 9.16 16.53 8.99 16.85 8.81 17.25 8.83 17.55 9.04L38.75 23.17C39.03 23.35 39.2 23.67 39.2 24 39.2 24.33 39.03 24.65 38.75 24.83Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                        <div class="popup_arrow_box">
+                            <button type="button" class="slick-arrow prev">이전
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                            </button>
+                            <button type="button" class="slick-arrow next">다음
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>    <!--//rowgroup2-->
+            <div class="rowgroup rowgroup3">
+                <div class="event_slide_box list_type">
+                    <h3 class="event_slide_title">전시 · 주요행사 · 교육</h3>
+                    <ul class="event_tab_list">
+                        <li class="event_tab_item active">
+                            <button type="button" title="선택됨" class="item_area">전체</button>
+                        </li>
+                        <li class="event_tab_item">
+                            <button type="button" class="item_area">전시</button>
+                        </li>
+                        <li class="event_tab_item">
+                            <button type="button" class="item_area">주요행사</button>
+                        </li>
+                        <li class="event_tab_item">
+                            <button type="button" class="item_area">교육</button>
+                        </li>
+                    </ul>
+                    <div class="event_slide_inner active">
+                        <div class="event_slide_list">
+                            <!--
+                           ★★개발 요청사항★★
+                           .event_slide_item 복사해서 사용해주세요
+                           .event_slide_item .item_area href 에 링크 넣어주세요
+                           .event_slide_item .item_img src 에 이미지 링크 넣어주세요
+                           .event_slide_item .item_bg style="background-image:url()" 에 같은 이미지 링크 넣어주세요
+                           글 종류에 따라 .event_slide_item .item_type_text 텍스트 변경해주세요
+                           <em class="item_type_text">전시</em>
+                           <em class="item_type_text">주요행사</em>
+                           <em class="item_type_text">교육</em>
+                           .event_slide_item .item_sub_title 에 서브타이틀 넣어주세요
+                           .event_slide_item .item_big_title 에 메인타이틀 넣어주세요
+                           -->
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img01.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img01.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">주요행사</span>
+                                        </span>
+                                        <span class="item_sub_title">텍스트 2줄까지 길어지면 어떻게 해야하는지 물어보기</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img02.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img02.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">주요행사</span>
+                                        </span>
+                                        <span class="item_sub_title">감사와 존경을 전하는</span>
+                                        <span class="item_big_title">편지쓰고 선물 받자!</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img03.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img03.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">교육</span>
+                                        </span>
+                                        <span class="item_sub_title">국립서울현충원이 준비한</span>
+                                        <span class="item_big_title">올바른 태극기 게양일 퀴즈!</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img04.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img04.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">주요행사</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 숏폼 공모전</span>
+                                        <span class="item_big_title">현충원에 와봄</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//event_slide_inner-->
+                    <div class="event_slide_inner">
+                        <div class="event_slide_list">
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img01.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img01.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">전시</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img01.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img01.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">전시</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img01.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img01.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">전시</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img01.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img01.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">전시</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//event_slide_inner-->
+                    <div class="event_slide_inner">
+                        <div class="event_slide_list">
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img02.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img02.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">주요행사</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img02.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img02.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">주요행사</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img02.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img02.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">주요행사</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img02.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img02.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">주요행사</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//event_slide_inner-->
+                    <div class="event_slide_inner">
+                        <div class="event_slide_list">
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img03.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img03.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">교육</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img03.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img03.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">교육</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img03.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img03.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">교육</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="event_slide_item">
+                                <a href="" class="item_area" rel="noopener noreferrer">
+                                    <span class="item_img_box">
+                                        <img class="item_img" src="/site/snmb/images/main/event_slide_img03.jpg" alt="">
+                                        <span class="item_bg" style="background-image:url(/site/snmb/images/main/event_slide_img03.jpg)"></span>
+                                    </span>
+                                    <span class="item_text_box">
+                                        <span class="item_type">
+                                            <span class="item_type_text">교육</span>
+                                        </span>
+                                        <span class="item_sub_title">2024년 국립서울현충원 가을음악회</span>
+                                        <span class="item_big_title">가을愛 물들다</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more_view_box">
+                            <a href="" class="more_view" rel="noopener noreferrer">더보기<span class="more_view_icon"></span></a>
+                        </div>
+                    </div>    <!--//event_slide_inner-->
+                </div>
+            </div>    <!--//rowgroup3-->
+            <div class="rowgroup rowgroup4">
+                <div class="memories_slide_box">
+                    <h3 class="memories_slide_title">추모의 글</h3>
+                    <div class="memories_slide_bg">
+                        <span class="memories_bg_text">
+                            대한민국을 지켜냈던<br />
+                            그대들의 정신을 잊지 않겠습니다.
+                        </span>
+                    </div>
+                    <div class="memories_slide_list">
+                        <!--
+                       ★★개발 요청사항★★
+                       .memories_slide_item 복사해서 사용해주세요
+                       .memories_slide_item .item_area href 에 링크 넣어주세요
+                       .memories_slide_item .item_text em 에 글 내용 넣어주세요
+                       -->
+                        <div class="memories_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <span class="item_text">
+                                    <em>추위이길 바래 올겨울엔
+눈이 자주 오고 많이도 와서
+농장가면 아직도 지붕과 곧곧에
+눈이 많고 집 마당도 눈 녹을
+시간 없이 쌓이고 있어
+여보 이런거는 걱정거리도 아니지?
+따뜻한 햇살이 며칠만 있으면
+눈녹듯 녹을꺼니까ᆢ아들 코고는
+소리에 오히려 잠을 푹 잤어요
+든든해요 걱정하지마요
+오늘도 당신이 편안하시길
+마음 다해 소원합니다 추위이길 바래 올겨울엔
+눈이 자주 오고 많이도 와서
+농장가면 아직도 지붕과 곧곧에
+눈이 많고 집 마당도 눈 녹을
+시간 없이 쌓이고 있어
+여보 이런거는 걱정거리도 아니지?
+따뜻한 햇살이 며칠만 있으면
+눈녹듯 녹을꺼니까ᆢ아들 코고는
+소리에 오히려 잠을 푹 잤어요
+든든해요 걱정하지마요
+오늘도 당신이 편안하시길
+마음 다해 소원합니다</em>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="memories_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <span class="item_text">
+                                    <em>지금 산본으로 애들 만나러  가는길..
+동작역에서 바라보이는 아버지 계신 충혼당 건물보니 울컥하네요.
+잘 지내시죠?많이 보고싶네,울아버지~♡
+가슴에 사무치는 그.리.움.
+지금 산본으로 애들 만나러  가는길..
+동작역에서 바라보이는 아버지 계신 충혼당 건물보니 울컥하네요.
+잘 지내시죠?많이 보고싶네,울아버지~♡
+가슴에 사무치는 그.리.움.</em>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="memories_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <span class="item_text">
+                                    <em>아버지 또 일년이 저물어갑니댜.
+하늘나라 가신지 14년 , 어제 오늘 폭설이 내렸어요.
+아버지 가시던 날도 얼음과 눈이 세상을 덮었어요.</em>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="memories_slide_item">
+                            <a href="" class="item_area" rel="noopener noreferrer">
+                                <span class="item_text">
+                                    <em>목숨을 바쳐 대한민국을 지켜내주셔 감사합니다..
+우크라이나 전쟁도 멈췄으면 좋겠네요 ..
+전쟁은 이기던 지던 손해보는것 잃는것 .. 저희를 태어나게 해주셔서 감사합니다. 부디 하늘에서는 젊은 멋진 시절, 생에 기억은 잊어서 행복하게즐겁게 지내고 계실거라 믿고싶습니다. 감사합니다.</em>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="memories_slide_control">
+                        <span class="slick-text current"></span>
+                        <span class="slick-text slice">/</span>
+                        <span class="slick-text total"></span>
+                        <button type="button" class="slick-arrow prev">이전
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                        </button>
+                        <button type="button" class="slick-arrow auto pause">정지
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#fff" stroke="none" shape-rendering="optimizeSpeed" d="M12 10L16 10 16 38 12 38 12 10ZM32 10L36 10 36 38 32 38 32 10Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                        <button type="button" class="slick-arrow auto play">재생
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="none" visibility="hidden" shape-rendering="optimizeSpeed" d="M0 0L48 0 48 48 0 48Z"/><path fill="#fff" stroke="none" shape-rendering="optimizeSpeed" d="M32.79 24L20 15.47 20 32.53 32.79 24ZM38.75 24.83L17.55 38.96C17.25 39.17 16.85 39.19 16.53 39.01 16.2 38.84 16 38.5 16 38.13L16 9.87C16 9.5 16.2 9.16 16.53 8.99 16.85 8.81 17.25 8.83 17.55 9.04L38.75 23.17C39.03 23.35 39.2 23.67 39.2 24 39.2 24.33 39.03 24.65 38.75 24.83Z"/><path fill="none" stroke="none" d="M0 0L48 0 48 48 0 48Z"/></svg>
+                        </button>
+                        <button type="button" class="slick-arrow next">다음
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>    <!--//rowgroup4-->
+        </main>
+    </div>    <!--//#container-->
+    <footer id="footer">
+        <div class="footer_layer_wrap">
+            <div class="layer_list">
+                <div class="layer_item">
+                    <button type="button" title="관련 누리집 레이어 열기" class="layer_open"><span><em>관련 누리집</em></span></button>    <!--//layer_open-->
+                    <ul class="modal_list">
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/mpva/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국가보훈부</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.dnc.go.kr/web/portal/main" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립대전현충원</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/419/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립4.19민주묘지</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/315/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립3.15민주묘지</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/518/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립5.18민주묘지</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/ycnc/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립영천호국원</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/isnc/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립임실호국원</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/icnc/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립이천호국원</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/scnc/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립산청호국원</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/gsnc/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립괴산호국원</a></li>    <!--//modal_item-->
+                        <li class="modal_item"><a href="https://www.mpva.go.kr/jjnc/index.do" class="modal_link" target="_blank" title="새창" rel="noopener noreferrer">국립제주호국원</a></li>    <!--//modal_item-->
+                    </ul>    <!--//modal_list-->
+                </div>    <!--//layer_item-->
+            </div>    <!--//layer_list-->
+        </div>    <!--//footer_layer_wrap-->
+        <div class="footer_box">
+            <div class="box_inner">
+                <div class="logo">
+                    <a href="./index.do" title="메인페이지로 이동" rel="noopener noreferrer">국립서울현충원</a>
+                </div>    <!--//logo-->
+                <div class="desc">
+                    <address class="desc_text address">(06984) 서울동작구 현충로 210 (동작동, 국립서울현충원)</address>    <!--//desc_text address-->
+                    <span class="desc_text tel">TEL. 1522-1555(대표번호)</span>    <!--//desc_text tel-->
+                    <span class="desc_text fax">FAX. 02-822-3762</span>    <!--//desc_text fax-->
+                </div>    <!--//desc-->
+            </div>    <!--//box_inner-->
+            <div class="box_etc">
+                <ul class="sns_list">
+                    <li class="sns_item youtube"><a href="" target="_blank" title="유튜브 새창이동" rel="noopener noreferrer">국립서울현충원 유튜브 링크</a></li>    <!--//sns_item youtube-->
+                    <li class="sns_item instagram"><a href="" target="_blank" title="인스타그램 새창이동" rel="noopener noreferrer">국립서울현충원 인스타그램 링크</a></li>    <!--//sns_item instagram-->
+                    <li class="sns_item kakao"><a href="" target="_blank" title="카카오 새창이동" rel="noopener noreferrer">국립서울현충원 카카오 링크</a></li>    <!--//sns_item kakao-->
+                    <li class="sns_item blog"><a href="" target="_blank" title="블로그 새창이동" rel="noopener noreferrer">국립서울현충원 블로그 링크</a></li>    <!--//sns_item blog-->
+                </ul>    <!--//sns_list-->
+            </div>    <!--//box_etc-->
+        </div>    <!--//footer_box-->
+        <div class="footer_bottom">
+            <div class="quick_box">
+                <ul class="quick_list">
+                    <li class="quick_item privacy"><a href="" rel="noopener noreferrer">개인정보처리방침</a></li>    <!--//quick_item privacy-->
+                    <li class="quick_item"><a href="" rel="noopener noreferrer">행정정보공개</a></li>    <!--//quick_item-->
+                    <li class="quick_item"><a href="" rel="noopener noreferrer">저작권보호정책</a></li>    <!--//quick_item-->
+                    <li class="quick_item"><a href="" rel="noopener noreferrer">뷰어다운로드</a></li>    <!--//quick_item-->
+                    <li class="quick_item"><a href="" rel="noopener noreferrer">사이트맵</a></li>    <!--//quick_item-->
+                </ul>    <!--//quick_list-->
+            </div>    <!--//quick_box-->
+            <p class="copyright">COPYRIGHT ⓒ SEOUL NATIONAL CEMETERY. ALL RIGHTS RESERVED.</p>    <!--//copyright-->
+        </div>    <!--//footer_bottom-->
+    </footer>    <!--//#footer-->
+</div>    <!--//#wrapper-->
+</body>
+</html>
